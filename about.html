@@ -1,45 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>О Нас</title>
     <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="about.css">
+
 <body>
     <div class="wrapper">
         <header class="header">
             <div class="container">
                 <div class="header__inner">
-                <a class="logo" href="#">
-                    <img src="images/logo.webp" alt="" class="logo__img"> 
-                </a>
-                <nav class="menu">
-                    <ul class="menu__list">
-                        <li class="menu__list-item"><a href="index.html" class="menu__list-link">Главная</a>
-                        </li>
-                        <li class="menu__list-item"><a href="about.html" class="menu__list-link">О Нас</a>
-                        </li>
-                        <li class="menu__list-item"><a href="realize.html" class="menu__list-link">Реализуем</a>
-                        </li>
-                        <li class="menu__list-item"><a href="vacancy.html" class="menu__list-link">Вакансии</a>
-                        </li>
-                    </ul>
-                </nav>         
-            </div>
+                    <a class="logo" href="index.html">
+                        <img src="images/logo.webp" alt="" class="logo__img">
+                    </a>
+                    <nav class="menu">
+                        <ul class="menu__list">
+                            <li class="menu__list-item"><a href="index.html" class="menu__list-link">Главная</a>
+                            </li>
+                            <li class="menu__list-item"><a href="about.html" class="menu__list-link">О Нас</a>
+                            </li>
+                            <li class="menu__list-item"><a href="realize.html" class="menu__list-link">Реализуем</a>
+                            </li>
+                            <li class="menu__list-item"><a href="vacancy.html" class="menu__list-link">Вакансии</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <div class="contact__information">
+                        Контакты: <br> +7(34372) 5-36-91 <br> +7-902-887-44-28
+                    </div>
+                    <div class="contact__information" onclick="copyEmail()"> email: <br> <a href="#"
+                            title="Скопировать email">spkkalina@mail.ru</a></div>
+                </div>
         </header>
         <div class="main">
-           
+
         </div>
         <div class="footer">
             <div class="container">
                 <div class="footer__inner">
-                    <a href="#" class="footer__img">
+                    <p href="#" class="footer__img">
                         <img src="images/footer.webp" alt="">
-                    </a>
+                    </p>
                     <div class="footer__text">
                         <a href="#" class="footer__logo">
-                        <img src="images/logo.webp" alt="">
+                            <img src="images/logo.webp" alt="">
                             <div class="footer__inner__text">
                                 Сельскохозяйственное <br> предприятие <br> ООО "Калининский" <br> 2024
                             </div>
@@ -48,6 +56,13 @@
                 </div>
             </div>
         </div>
-    </div> 
+    </div>
+    <script>
+        function copyEmail() {
+            navigator.clipboard.writeText
+                ("spkkalina@mail.ru");
+        }
+    </script>
 </body>
+
 </html>

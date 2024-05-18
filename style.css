@@ -1,3 +1,4 @@
+/*основа для все страниц: обнуление стилей, header, footer*/
 html {
     box-sizing: border-box;
 }
@@ -50,6 +51,8 @@ body{
 
 }
 .header__inner{
+    margin-left: 15%;
+    margin-right: 10%;
     padding-top: 20px;
     padding-bottom: 30px;
     padding-left: 50px;
@@ -57,9 +60,13 @@ body{
     align-items: flex-end;
     
 }
+.menu{
+    margin: 0 50px;
+    margin-right: 100px;
+}
 .menu__list{
     display: flex;
-    padding-left: 10px;
+    padding: 0 10px;
     gap: 40px;
 
 }
@@ -71,10 +78,19 @@ body{
     padding: 10px;
 }
 
+.contact__information{
+    text-align: left;
+    margin: 0 10px;
+    color: white; 
+    font-size: 18px;  
+    cursor: default; 
+    
+}
+
 /*main block*/
 .main{
+    padding: 40px;
     flex-grow: 1;
-    
 }
 
 /*footer block*/
@@ -86,13 +102,14 @@ body{
 
 .footer__inner{
     margin-bottom: -100px;
+    
 }
 .footer__logo{
     margin: auto; 
     position: relative;
     display: flex;
     gap: 10px;
-    
+    cursor: default;    
 }
 
 .footer__text{
@@ -103,4 +120,8 @@ body{
     padding: 5px;
     color: white;
     text-transform: uppercase;
+
+}
+.footer__inner__text{
+    cursor: default;
 }
