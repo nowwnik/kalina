@@ -35,14 +35,14 @@ body{
 
 .container {
     margin: auto;
-    max-width: 1920px;
+    max-width: 2580px;
 }
 
 /*menu block*/
 .header{
     width: 100%;
     background-color: red;
-    max-width: 1920px;
+    
     margin: auto;
 
 }
@@ -89,7 +89,6 @@ body{
 
 /*main block*/
 .main{
-    padding: 40px;
     flex-grow: 1;
 }
 
@@ -103,6 +102,10 @@ body{
 .footer__inner{
     margin-bottom: -100px;
     
+}
+
+.footer__img{
+    object-fit: cover;
 }
 .footer__logo{
     margin: auto; 

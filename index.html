@@ -5,8 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Калина</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>
@@ -30,14 +33,26 @@
                         </ul>
                     </nav>
 
-                    <div class="contact__information">
-                        Контакты: <br> +7(34372) 5-36-91 <br> +7-902-887-44-28
+                    <div class="contact__information" onclick="copyPhone()">
+                        Контакты: <br> <a href="#" title="Скопировать телефон">+7(34372) 5-36-91</a><br> +7-902-887-44-28
                     </div>
                     <div class="contact__information" onclick="copyEmail()"> email: <br> <a href="#"
                             title="Скопировать email">spkkalina@mail.ru</a></div>
                 </div>
         </header>
         <div class="main">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" style="background-image: url(images/swiper/sl1.webp)"></div>
+                    <div class="swiper-slide" style="background-image: url(images/swiper/sl2.webp)"></div>
+                    <div class="swiper-slide" style="background-image: url(images/swiper/sl3.webp)"></div>       
+                    <div class="swiper-slide" style="background-image: url(images/swiper/sl4.webp)"></div>
+                </div>
+
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
 
         </div>
         <div class="footer">
@@ -58,12 +73,9 @@
             </div>
         </div>
     </div>
-    <script>
-        function copyEmail() {
-            navigator.clipboard.writeText
-                ("spkkalina@mail.ru");
-        }
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="scripts/swiper.js"></script>
+    <script src="scripts/copy.js"></script>
 </body>
 
 </html>
