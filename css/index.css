@@ -32,16 +32,38 @@
 }
 
 h1{
-    margin: 40px;
+    margin: 45px;
     text-align: center;
     text-transform: uppercase;
     font-size: 40px;
     font-weight: 800;
     color: darkred;
+    
 }
 
 h2{
     margin: 10px;
-    text-align: justify;
+    font-size: 30px;
 }
 
+.discription{
+    max-width: 75%;
+    margin: auto;
+    
+}
+
+.main__inner{
+    display: flex;
+    
+}
+
+.main__inner__block{
+    flex-direction: column;
+}
+
+.main__inner__text{
+    display: flex;
+    align-items: center;
+    font-size: 26px;
+
+}    
