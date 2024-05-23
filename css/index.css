@@ -30,3 +30,18 @@
 .swiper-pagination-bullet{
     background-color: white;
 }
+
+h1{
+    margin: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 800;
+    color: darkred;
+}
+
+h2{
+    margin: 10px;
+    text-align: justify;
+}
+
