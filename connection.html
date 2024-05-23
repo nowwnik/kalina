@@ -4,9 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>О Нас</title>
+    <title>Калина</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/connection.css">
+</head>
 
 <body>
     <div class="wrapper">
@@ -20,17 +24,17 @@
                         <ul class="menu__list">
                             <li class="menu__list-item"><a href="index.html" class="menu__list-link">Главная</a>
                             </li>
-                            <li class="menu__list-item"><a href="about.html" class="menu__list-link">О Нас</a>
-                            </li>
                             <li class="menu__list-item"><a href="realize.html" class="menu__list-link">Реализуем</a>
                             </li>
                             <li class="menu__list-item"><a href="vacancy.html" class="menu__list-link">Вакансии</a>
                             </li>
+                            <li class="menu__list-item"><a href="connection.html" class="menu__list-link">Обратная связь</a>
+                            </li>
                         </ul>
                     </nav>
 
-                    <div class="contact__information">
-                        Контакты: <br> +7(34372) 5-36-91 <br> +7-902-887-44-28
+                    <div class="contact__information" onclick="copyPhone()">
+                        Контакты: <br> <a href="#" title="Скопировать телефон">+7(34372) 5-36-91</a><br> +7-902-887-44-28
                     </div>
                     <div class="contact__information" onclick="copyEmail()"> email: <br> <a href="#"
                             title="Скопировать email">spkkalina@mail.ru</a></div>
@@ -57,12 +61,7 @@
             </div>
         </div>
     </div>
-    <script>
-        function copyEmail() {
-            navigator.clipboard.writeText
-                ("spkkalina@mail.ru");
-        }
-    </script>
+    <script src="scripts/copy.js"></script>
 </body>
 
 </html>
