@@ -7,7 +7,7 @@
     <title>Калина</title>
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/index.css">
 </head>
@@ -58,7 +58,7 @@
             <div class="discription">
                 <h1>О нас</h1>
                 <div class="main__inner">
-                    <div class="main__inner__block animate__animated animate__fadeInLeft">
+                    <div class="main__inner__block wow animate__animated animate__fadeInLeft" >
                         <div class="background__block">
                             <h2>Животноводство</h2>
                             <div class="milk main__inner__text">По прошлому году хозяйство достигло надоя более 8 400 кг
@@ -68,11 +68,11 @@
                             </div>
                         </div>
                     </div>
-                    <img width="70%" class="discrp__pic" src="images/disription/ds1.jpg" alt="">
+                    <img width="70%" class="discrp__pic wow animate__animated animate__fadeInRight" src="images/disription/ds1.jpg" alt="">
                 </div>
 
                 <div class="main__inner">
-                    <div class="main__inner__block">
+                    <div class="main__inner__block wow animate__animated animate__fadeInLeft">
                         <div class="background__block">
                             <h2>Корма</h2>
                             <div class="feed main__inner__text">Чтобы повысить надои, руководство предприятия уделяет
@@ -83,7 +83,7 @@
                             </div>
                         </div>
                     </div>
-                    <img src="" alt="">
+                    <img width="70%" class="discrp__pic wow animate__animated animate__fadeInRight" src="images/disription/ds2.jpeg" alt="">
                 </div>
 
                 <div class="main__inner">
@@ -156,11 +156,11 @@
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="scripts/swiper.js"></script>
-    <script src="scripts/jquery.min.js"></script>
-    <script src="scripts/wow.min.js"></script>
-    <script>new WOW().init();</script>
-    <script src="scripts/copy.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+    <script>wow = new WOW({animateClass: 'animate__animated', offset: 500}); wow.init();</script>
+    <script src="scripts/scripts.js"></script>
 </body>
 
 </html>

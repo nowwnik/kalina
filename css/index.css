@@ -57,15 +57,7 @@ h2 {
 .main__inner {
     display: flex;
     margin: 20px;
-    /*transform: translateY(150px);
-    opacity: 0;
-    transition: 2s all ease;
 
-}
-
-/*.main__inner.active{
-    transform: translateY(0);
-    opacity: 1;*/
   }
 
 .background__block {
@@ -78,8 +70,8 @@ h2 {
 
 .main__inner__block {
     flex-direction: column;
+    z-index: 1;
     
-
 }
 
 .discrp__pic{
