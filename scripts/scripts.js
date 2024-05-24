@@ -1,6 +1,7 @@
 const swiper = new Swiper(".swiper", {
   cssMode: true,
   loop: true,
+  autheight: true,
   autoplay: {
     delay: 3000,
   },
@@ -13,6 +14,17 @@ const swiper = new Swiper(".swiper", {
   },
   mousewheel: true,
   keyboard: true,
+  on: {
+    init() {
+      this.el.addEventListener('mouseenter', () => {
+        this.autoplay.stop();
+      });
+
+      this.el.addEventListener('mouseleave', () => {
+        this.autoplay.start();
+      });
+    }
+  }
 });
 
 function copyEmail() {
