@@ -27,6 +27,33 @@ const swiper = new Swiper(".swiper", {
   }
 });
 
+const swiper2 = new Swiper(".swiper2", {
+  cssMode: true,
+  loop: true,
+  autheight: true,
+  autoplay: {
+    delay: 7000,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  
+  mousewheel: true,
+  keyboard: true,
+  on: {
+    init() {
+      this.el.addEventListener('mouseenter', () => {
+        this.autoplay.stop();
+      });
+
+      this.el.addEventListener('mouseleave', () => {
+        this.autoplay.start();
+      });
+    }
+  }
+});
+
 function copyEmail() {
   navigator.clipboard.writeText
       ("spkkalina@mail.ru");

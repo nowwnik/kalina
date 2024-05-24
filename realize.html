@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Коммерция</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/realize.css">
+    <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>
@@ -25,7 +27,8 @@
                             </li>
                             <li class="menu__list-item"><a href="vacancy.html" class="menu__list-link">Вакансии</a>
                             </li>
-                            <li class="menu__list-item"><a href="connection.html" class="menu__list-link">Обратная связь</a>
+                            <li class="menu__list-item"><a href="connection.html" class="menu__list-link">Обратная
+                                    связь</a>
                             </li>
                         </ul>
                     </nav>
@@ -38,6 +41,99 @@
                 </div>
         </header>
         <div class="main">
+            <h1>Коммерческие предложения</h1>
+            <div class="swiper2">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" style="background-image: url(images/swiper_realize/peas.webp)"></div>
+                    <div class="swiper-slide" style="background-image: url(images/swiper_realize/herbs.webp)"></div>
+                </div>
+
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+            <h2>Реализация кормов для крупного рогатого скота</h2>
+            <div class="Block">
+                <ul>
+                    <li>Сенаж гороховый, урожай 2022 года по цене 3 р/кг (в т.ч. НДС).</li>
+                    <li>Сенаж гороховый, урожай 2023 года по цене 5 р/кг (в т.ч. НДС).</li>
+                    <li>Сенаж многолетних трав, урожай 2023 года по цене 5 р/кг (в т.ч НДС).</li>
+                </ul>
+                <div class="Left">Самовывоз. Погрузка силами и средствами продавца.</div>
+            </div>
+            <img class="Cow" src="images/swiper_realize/cow.webp">
+            <h2>Реализация племенных нетелей</h2>
+            <div class="Block">
+                <ul>
+                    <li>30 голов, со средней продуктивностью по матери 9330 кг. Вес
+                        <br>одной нетели около 500 кг. Цена за 1 кг. живой массы 340 руб.
+                        <br>Плановые отёлы сентябрь, октябрь. Тип использования семени
+                        <br>традиционное/сексированное.</br>
+                    </li>
+                    <li>ООО «Калининский» является племенным репродуктором по
+                        <br>разведению крупного рогатого скота голштинской породы
+                        <br>(свидетельство ПЖ77 № 010301 от 11 ноября 2022г.)</br>
+                    </li>
+                </ul>
+            </div>
+
+
+            <h2 class="title">Оформить заказ</h2>
+            <h3>Оставьте Ваши контактные данные и мы вышлем Вам индивидуальное коммерческое предложение</h3>
+            <div class="Order">
+                <div class="container1">
+                    <form>
+                        <div class="input_block">
+                            <input id="firstName" onblur="checkFirstName()" type="text" placeholder="Имя" required />
+                            <span id="firstname_check"></span>
+                        </div>
+                        <div class="input_block">
+                            <input id="secondName" onblur="checkSecondName()" type="text" placeholder="Фамилия"
+                                required />
+                            <span id="secondname_check"></span>
+                        </div>
+                        <div class="input_block">
+                            <input id="lastName" onblur="checkLastName()" type="text" placeholder="Отчетство"
+                                required />
+                            <span id="lastname_check"></span>
+                        </div>
+                        <div class="input_block">
+                            <input id="phone" onblur="checkPhone()" type="tel" placeholder="+7-988-888-88-88"
+                                required />
+                            <span id="phone_check"></span>
+                            <div class="input_block">
+                                <input id="email" onblur="checkEmail()" type="mail" placeholder="Email" required />
+                                <span id="email_check"></span>
+                            </div>
+                            <div class="input_block">
+                                <input id="address" onblur="checkAddress()" type="text" placeholder="Адрес доставки"
+                                    required />
+                                <span id="address_check"></span>
+                            </div>
+                            <div class="input_block">
+                                <input id="date" type="date" placeholder="Дата доставки" required />
+                                <input id="time" type="time" placeholder="Время" required />
+                            </div>
+                            <div class="input_block">
+                                Способ оплаты:
+                                <select name="payment-method" required>
+                                    <option>При получении</option>
+                                    <option>Онлайн</option>
+                                </select>
+                            </div>
+
+                            <div class="button" onclick="Order()">
+                                Создать заказ
+                            </div>
+                    </form>
+                </div>
+
+                <div id="hidden" class="order-summary">
+                    <span id="orderSummary"></span>
+                </div>
+            </div>
+            </form>
+
+
 
         </div>
         <div class="footer">
@@ -58,7 +154,9 @@
             </div>
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="scripts/scripts.js"></script>
+    <script src="scripts/valid_realize.js"></script>
 </body>
 
 </html>
