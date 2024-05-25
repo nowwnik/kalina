@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/realize.css">
-    
+
 
 </head>
 
@@ -98,41 +98,25 @@
                             <span id="lastname_check"></span>
                         </div>
                         <div class="input_block">
-                            <input id="phone" onblur="checkPhone()" type="tel" placeholder="+7-988-888-88-88"
-                                required />
+                            <input id="phone" onblur="checkPhone()" type="tel" placeholder="Номер телефона" required />
                             <span id="phone_check"></span>
-                            <div class="input_block">
-                                <input id="email" onblur="checkEmail()" type="mail" placeholder="Email" required />
-                                <span id="email_check"></span>
-                            </div>
-                            <div class="input_block">
-                                <input id="address" onblur="checkAddress()" type="text" placeholder="Адрес доставки"
-                                    required />
-                                <span id="address_check"></span>
-                            </div>
-                            <div class="input_block">
-                                <input id="date" type="date" placeholder="Дата доставки" required />
-                                <input id="time" type="time" placeholder="Время" required />
-                            </div>
-                            <div class="input_block">
-                                Способ оплаты:
-                                <select name="payment-method" required>
-                                    <option>При получении</option>
-                                    <option>Онлайн</option>
-                                </select>
-                            </div>
-
-                            <div class="button" onclick="Order()">
-                                Создать заказ
-                            </div>
+                        </div>
+                        <div class="input_block">
+                            <input id="need" onblur="checkNeed()" type="text" placeholder="Что вам необходимо?"
+                                required />
+                            <span id="need_check"></span>
+                        </div>
+                        <div class="button" onclick="Order()">
+                            Отправить данные
+                        </div>
                     </form>
-                </div>
-
-                <div id="hidden" class="order-summary">
-                    <span id="orderSummary"></span>
                 </div>
             </div>
             </form>
+            <div id="hidden" class="order-summary">
+                <span id="orderSummary"></span>
+            </div>
+
 
 
 

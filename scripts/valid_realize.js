@@ -62,33 +62,17 @@ function checkPhone() {
     }
 }
 
-function checkEmail() {
-    var phone = document.getElementById("email").value;
-    var regex = /^[\w-\.]+@[\w-]+\.[a-z]{2,4}$/i;
-
-    if (regex.test(phone)) {
-        document.getElementById("email_check").style.color = "green";
-        document.getElementById("email_check").innerHTML = "✓";
-        return true;
-    } else {
-        document.getElementById("email_check").style.color = "red";
-        document.getElementById("email_check").innerHTML = "Email в формате name@mail.ru";
-        return false;
-    }
-}
-
-
-function checkAddress() {
-    var dest = document.getElementById("address").value;
-    var regex = /^[а-яА-Я\s.,\d ]{5,50}$/;
+function checkNeed() {
+    var dest = document.getElementById("need").value;
+    var regex = /^[а-яА-Я\s.,\d ]{5,100}$/;
 
     if (regex.test(dest)) {
-        document.getElementById("address_check").style.color = "green";
-        document.getElementById("address_check").innerHTML = "✓";
+        document.getElementById("need_check").style.color = "green";
+        document.getElementById("need_check").innerHTML = "✓";
         return true;
     } else {
-        document.getElementById("address_check").style.color = "red";
-        document.getElementById("address_check").innerHTML = "От 5 до 50 символов";
+        document.getElementById("need_check").style.color = "red";
+        document.getElementById("need_check").innerHTML = "От 5 до 100 символов";
         return false;
     }
 }
@@ -98,24 +82,19 @@ function Order() {
     let firstname = document.getElementById('firstName').value;
     let secondname = document.getElementById('secondName').value;
     let lastname = document.getElementById('lastName').value;
-    let email = document.getElementById('email').value;
-    var address = document.getElementById("address").value;
     let phone = document.getElementById('phone').value;
+    var need = document.getElementById("need").value;
+    
 
 
-    if (firstname != '' && secondname != '' && lastname != '' && email != '' && address != '' && phone != '') {
-        document.getElementById('orderSummary').innerHTML = 'Здравствуйте, ' + firstname + ' ' + secondname + ' ' + lastname + ' !';
-        document.getElementById("orderSummary").innerHTML += "<p>Ваш заказ успешно оформлен. Вы можете ознакомиться с подробностями вашего заказа: </p>";
-        document.getElementById("orderSummary").innerHTML += "<br>Пункт назначения: " + address + ".</br>";
-        document.getElementById('orderSummary').innerHTML += '<p>Номер телефона: ' + phone + '.</p>';
-        document.getElementById('orderSummary').innerHTML += '<p>Ваш Email: ' + email + '.</p>';
-        document.getElementById("orderSummary").innerHTML += "<p style='font-weight: bold;'> Спасибо за заказ!</p>";
+    if (firstname != '' && secondname != '' && lastname != '' && phone != '' && need != '' ) {
+        document.getElementById("orderSummary").innerHTML = " ";
+        document.getElementById("orderSummary").innerHTML += "<p>Ваша заявка принята.</p>";
+        alert(firstname + ' ' + lastname + ' ,' + 'cкоро мы с Вами свяжемся для обсуждения коммерческого предложения.')
     } else {
         document.getElementById('orderSummary').style.color = 'blue';
         document.getElementById('orderSummary').innerHTML = 'Заполните все поля';
     }
-
-    alert('Ваш заказ оформлен. Подробности заказа на странице')
 
     const text = document.getElementById("hidden");
     text.style.display = "block";
