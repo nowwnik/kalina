@@ -13,16 +13,13 @@ html,body{
     height: 100%;
 }
 
-/*ul{
-    list-style: none;
-}*/
-
 a{
     text-decoration: none;
     color: inherit;
 }
 
 .wrapper{
+    max-width: 2580px;
     min-height: 100%;
     display: flex;
     flex-direction: column;
@@ -53,7 +50,7 @@ body{
     margin-left: 15%;
     margin-right: 10%;
     padding-top: 20px;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
     padding-left: 50px;
     display: flex;
     align-items: flex-end;
@@ -71,17 +68,19 @@ body{
 }
 
 .menu__list-item{
+    list-style: none;
     color: white;
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: 1.7em;
     padding: 10px;
 }
 
 .contact__information{
     text-align: left;
     margin: 0 10px;
+    margin-left: 5%;
     color: white; 
-    font-size: 18px;  
+    font-size: 1.3em;  
     cursor: default; 
     
 }
@@ -126,4 +125,14 @@ body{
 }
 .footer__inner__text{
     cursor: default;
+}
+
+@media screen and (max-width: 1920px) {
+    .header__inner{
+        margin-left: 0px;
+    }
+
+    .menu__list-item{
+        font-size: 1.5em;
+    }
 }
