@@ -278,12 +278,17 @@
                         <span id="lastname_check"></span>
                     </div>
                     <div class="input_block">
-                        <input id="phone" onblur="checkPhone()" type="tel" placeholder="Номер телефона" required />
+                        <input id="phone" onblur="checkPhone()" type="tel" placeholder="Номер телефона для связи" required />
                         <span id="phone_check"></span>
                     </div>
                     <div class="input_block">
-                        <input id="need" onblur="checkNeed()" type="text" placeholder="Что вам необходимо?" required />
+                        <input id="need" onblur="checkNeed()" type="text" placeholder="На какую вакансию претендуете?" required />
                         <span id="need_check"></span>
+                    </div>
+                    <div class="input_block">
+                        <label for="resume">Вложите ваше резюме</label>
+                        <input id="resume" onblur="checkResume()" type="file" placeholder="На какую вакансию претендуете?" required />
+                        <span id="need_resume"></span>
                     </div>
                     <div class="button" onclick="Order()">
                         Отправить данные
