@@ -86,12 +86,47 @@
                     <li>доставка служебным автотранспортом</li>
                     <li>Предоставление жилья иногородним</li>
                 </ul>
-                <h2>Отдел кадров</h2>
+                <h1>Отдел кадров</h1>
 
             </div>
-
-
         </div>
+
+        <h4 class="title">Оформить заказ</h4>
+        <h5>Оставьте Ваши контактные данные и мы вышлем Вам индивидуальное коммерческое предложение</h5>
+        <div class="Order">
+            <div class="container1">
+                <form>
+                    <div class="input_block">
+                        <input id="firstName" onblur="checkFirstName()" type="text" placeholder="Имя" required />
+                        <span id="firstname_check"></span>
+                    </div>
+                    <div class="input_block">
+                        <input id="secondName" onblur="checkSecondName()" type="text" placeholder="Фамилия" required />
+                        <span id="secondname_check"></span>
+                    </div>
+                    <div class="input_block">
+                        <input id="lastName" onblur="checkLastName()" type="text" placeholder="Отчетство" required />
+                        <span id="lastname_check"></span>
+                    </div>
+                    <div class="input_block">
+                        <input id="phone" onblur="checkPhone()" type="tel" placeholder="Номер телефона" required />
+                        <span id="phone_check"></span>
+                    </div>
+                    <div class="input_block">
+                        <input id="need" onblur="checkNeed()" type="text" placeholder="Что вам необходимо?" required />
+                        <span id="need_check"></span>
+                    </div>
+                    <div class="button" onclick="Order()">
+                        Отправить данные
+                    </div>
+                </form>
+            </div>
+        </div>
+        </form>
+        <div id="hidden" class="order-summary">
+            <span id="orderSummary"></span>
+        </div>
+
         <div class="footer">
             <div class="container">
                 <div class="footer__inner">
@@ -111,6 +146,7 @@
         </div>
     </div>
     <script src="scripts/scripts.js"></script>
+    <script src="scripts/valid_vacancy.js"></script>
 </body>
 
 </html>

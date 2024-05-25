@@ -26,3 +26,114 @@
     position: sticky;
     top: 20px;
 }
+
+h4 {
+    margin: 45px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 800;
+    color: darkred;
+}
+
+h5 {
+    margin-top: -20px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.Order {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.container1 {
+    margin-top: 40px;
+}
+
+.form {
+    width: 100%;
+}
+
+input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 2px;
+    width: 1000px;
+    height: 50px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    margin-bottom: 10px;
+
+}
+
+.button {
+    width: 100%;
+    height: 50px;
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: #FFD429;
+    font-family: 'Ubuntu', sans-serif;
+    transition: all 0.5;
+    animation: bttn;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+.button:hover {
+    background-color: rgb(240, 147, 25);
+    box-shadow: 5px 5px 5px grey;
+}
+
+@keyframes bttn {
+    0% {
+        background-color: #FFD429;
+    }
+
+    25% {
+        background-color: rgb(235, 170, 8);
+    }
+
+    50% {
+        background-color: yellow;
+    }
+
+    75% {
+        background-color: rgb(235, 170, 8);
+    }
+
+    100% {
+        background-color: #FFD429;
+    }
+}
+
+#hidden {
+    display: none;
+}
+
+.order-summary {
+    font-size: 25px;
+    width: 600px;
+    height: 450px;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.form:hover {
+    align-items: center;
+    justify-content: center;
+}
