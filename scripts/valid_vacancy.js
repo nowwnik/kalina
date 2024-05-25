@@ -62,17 +62,17 @@ function checkPhone() {
     }
 }
 
-function checkNeed() {
-    var dest = document.getElementById("need").value;
+function checkJob() {
+    var dest = document.getElementById("job").value;
     var regex = /^[а-яА-Я\s.,\d ]{5,100}$/;
 
     if (regex.test(dest)) {
-        document.getElementById("need_check").style.color = "green";
-        document.getElementById("need_check").innerHTML = "✓";
+        document.getElementById("job_check").style.color = "green";
+        document.getElementById("job_check").innerHTML = "✓";
         return true;
     } else {
-        document.getElementById("need_check").style.color = "red";
-        document.getElementById("need_check").innerHTML = "От 5 до 100 символов";
+        document.getElementById("job_check").style.color = "red";
+        document.getElementById("job_check").innerHTML = "От 5 до 100 символов";
         return false;
     }
 }

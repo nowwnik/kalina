@@ -260,8 +260,8 @@
             </div>
         </div>
 
-        <h4 class="title">Оформить заказ</h4>
-        <h5>Оставьте Ваши контактные данные и мы вышлем Вам индивидуальное коммерческое предложение</h5>
+        <h4 class="title">Оставить заявку на вакансию</h4>
+        <h5>Оставьте Ваши контактные данные и мы рассмотрим Вашу кандитатуру</h5>
         <div class="Order">
             <div class="container1">
                 <form>
@@ -282,12 +282,12 @@
                         <span id="phone_check"></span>
                     </div>
                     <div class="input_block">
-                        <input id="need" onblur="checkNeed()" type="text" placeholder="На какую вакансию претендуете?" required />
-                        <span id="need_check"></span>
+                        <input id="job" onblur="checkJob()" type="text" placeholder="На какую вакансию претендуете?" required />
+                        <span id="job_check"></span>
                     </div>
                     <div class="input_block">
                         <label for="resume">Вложите ваше резюме</label>
-                        <input id="resume" onblur="checkResume()" type="file" placeholder="На какую вакансию претендуете?" required />
+                        <input id="resume" onblur="checkResume()" type="file" accept=".png, .jpeg, .doc, .docx, .pdf, .rtf">
                         <span id="need_resume"></span>
                     </div>
                     <div class="button" onclick="Order()">
