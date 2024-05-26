@@ -5,11 +5,10 @@
 
 .swiper-slide {
     text-align: center;
-    font-size: 18px;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 600px;
+    height: 800px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom center;
@@ -65,7 +64,7 @@ h2 {
     width: 220%;
     height: 100%;
     transform: skew(-30deg);
-    background: #D4D5DA;
+    background: #e5e5e7;
     max-width: 1600px;
     flex-grow: 1;
 
@@ -79,22 +78,48 @@ h2 {
 }
 
 .main__inner__text {
-    padding: 100px 80px 80px 120px;
+    padding: 140px 80px 80px 140px;
+    margin-bottom: 20px;
     display: flex;
     align-items: center;
-    vertical-align: middle;
-    font-size: 2em;
+    font-size: 2.3em;
     transform: skew(30deg);
-    
+    width: 95%;
+
+}
+
+.inner__bg{
+    background: #e5e5e7;
+    transform: skew(-30deg);
+    padding: 30px;
+    margin: 30px;
+   
+}
+
+.inner__bg .inner__text{
+    transform: skew(30deg);
+}
+
+.company{
+    font-size: 2.5em;
 }
 
 .inner__text {
     display: flex;
     align-items: center;
-    font-size: 26px;
+    padding-left: 30px;
+    font-size: 2.5em;
+    margin: 1em;
+
 }
 
-.background1{
+.history__text {
+    font-size: 2em;
+
+}
+
+
+.background1 {
     margin-top: 1%;
     width: 100%;
     height: 800px;
@@ -104,7 +129,7 @@ h2 {
     background-image: url(../images/disription//bg/bg1.jpg);
 }
 
-.background2{
+.background2 {
     margin: 0;
     width: 100%;
     height: 1000px;
@@ -120,14 +145,14 @@ h2 {
 }
 
 
-.fields{
-    width: 85%;
+.fields {
+    width: 70%;
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
-.harvesting{
+.harvesting {
     width: 996px;
     height: 560px;
     display: block;
@@ -135,6 +160,7 @@ h2 {
     margin-right: auto;
 
 }
+
 h3 {
     font-size: 30px;
     text-align: center;
@@ -142,37 +168,39 @@ h3 {
     margin-bottom: 20px;
 }
 
+.discription h3{
+    font-size: 2.5em;
+}
+
 .plans {
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     flex-direction: row;
+    margin-top: -30px;
 }
 
 .discription__plans {
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
     display: inline-block;
     width: 30%;
     margin: 10px;
     margin-bottom: 40px;
-    
+
 }
-.discription__plans:nth-child(2){
+
+.discription__plans:nth-child(2) {
     animation-delay: 0.1s;
 }
-.discription__plans:nth-child(3){
+
+.discription__plans:nth-child(3) {
     animation-delay: 0.2s;
 }
-.discription__plans:nth-child(4){
+
+.discription__plans:nth-child(4) {
     animation-delay: 0.3s;
 }
 
-.background3{
+.background3 {
     margin: 0;
     width: 100%;
     height: 1000px;
@@ -182,36 +210,58 @@ h3 {
     background-image: url(../images/disription//bg/bg3.jpg);
 }
 
-.history__pic{
+.history__pic {
     display: flex;
-    
-    margin-left: auto;
+    margin-left: 20px;
     margin-right: auto;
 }
 
-.block__adaptive{
+.block__adaptive {
     width: 180%;
 }
 
-.history__pic img{
+.history__pic img {
     width: 32%;
     margin: 10px;
     align-items: center;
 }
 
-.history__pic img:nth-child(2){
+.history__pic img:nth-child(2) {
     animation-delay: 0.1s;
 }
-.history__pic img:nth-child(3){
+
+.history__pic img:nth-child(3) {
     animation-delay: 0.2s;
 }
-.history__pic img:nth-child(4){
+
+.history__pic img:nth-child(4) {
     animation-delay: 0.3s;
 }
 
 
 @media screen and (max-width: 1920px) {
-    .main__inner__text{
+    h1{
+        font-size: 2.5em;
+    }
+
+    .main__inner__text {
         font-size: 1.7em;
+        padding: 90px 80px 80px 120px;
+    }
+
+    .swiper-slide {
+        height: 600px;
+    }
+
+    .discription h3{
+        font-size: 2em;
+    }
+
+    .inner__text{
+        font-size: 2em;
+    }
+
+    .company{
+        font-size: 2.3em;
     }
 }
