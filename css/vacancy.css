@@ -1,30 +1,87 @@
 .main {
     display: flex;
     flex-direction: row;
+    
+}
+
+h1 {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 3.3em;
+    font-weight: 800;
+    color: darkred;
+
 }
 
 .vacancy {
     margin: 2em;
     padding: 2em;
+    padding-left: 5em;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+
 }
 
-.vacancy__card{
-    max-width: 50%;
+.vacancy__card {
+    height: 100vh;
+    max-width: 31%;
+    margin: 10px;
+    box-shadow: 0px 8px 14px 4px rgba(101, 101, 101, 0.16);
+    
 }
 
-.vacancy__card h2{
+.vacancy__card__img {
+    width: 100%;
+
+}
+
+.vacancy__card h2 {
     text-align: center;
+    color: darkred;
+
 }
 
-.work{
-    margin-left: 50px;
-    margin-right: 50px;
-    width: 50%;
-    position: sticky;
-    top: 20px;
+.vacancy__card__text {
+    margin: 25px;
+    word-break: normal;
+    font-size: 1.7em;
+}
+
+.vacancy__card:nth-child(2) {
+    animation-delay: 0.1s;
+}
+
+.vacancy__card:nth-child(3) {
+    animation-delay: 0.2s;
+}
+
+.vacancy__card:nth-child(4) {
+    animation-delay: 0.3s;
+}
+
+.vacancy__card:hover {
+    transition-duration: .2s;
+    box-shadow: 0px 8px 14px 4px darkred;
+}
+
+.respond__button {
+    color: white;
+    background-color: rgb(230, 0, 0);
+    display: inline-block;
+    padding: 18px;
+    margin-top: 20px;
+    margin-left: 30px;
+    border-radius: 3px;
+    font-size: 2em;
+    cursor: pointer;
+
+}
+
+.respond__button:hover {
+    transition-duration: .2s;
+    background-color: rgb(211, 0, 0);
+    box-shadow: 0px 8px 14px 4px darkred;
 }
 
 h4 {
@@ -165,4 +222,30 @@ label {
 .form:hover {
     align-items: center;
     justify-content: center;
+}
+
+@media screen and (max-width: 1920px) {
+
+    .vacancy {
+       padding-left: 6%;
+    }
+
+    .vacancy__card {
+        height: 110vh;
+        max-width: 44%;
+        margin: 0px 20px 20px;
+    }
+
+    .vacancy__card__text {
+        margin: 10px;
+        font-size: 1.3em;
+    }
+
+    .respond__button {
+        margin-top: 20px;
+        margin-left: 20px;
+        font-size: 1.5em;
+    
+    }
+
 }

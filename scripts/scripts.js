@@ -63,3 +63,7 @@ function copyPhone() {
   navigator.clipboard.writeText
       ("+7(34372) 5-36-91");
 }
+
+function scrollDown(){
+  $('html, body').animate({scrollTop: $(document).height() - $(window).height()-100}, 600);
+}
