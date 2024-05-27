@@ -18,7 +18,7 @@ function checkFirstName() {
 }
 
 function checkSecondName() {
-    var last = document.getElementById("secondName").value;
+    var second = document.getElementById("secondName").value;
     var regex = /^[а-яА-Я\s]{2,30}$/;
 
     if (regex.test(second)) {
@@ -83,14 +83,14 @@ function Order() {
     let secondname = document.getElementById('secondName').value;
     let lastname = document.getElementById('lastName').value;
     let phone = document.getElementById('phone').value;
-    var need = document.getElementById("need").value;
+    let dest = document.getElementById("job").value;
     
 
 
-    if (firstname != '' && secondname != '' && lastname != '' && phone != '' && need != '' ) {
+    if (firstname != '' && secondname != '' && lastname != '' && phone != '' && dest != '' ) {
         document.getElementById("orderSummary").innerHTML = " ";
         document.getElementById("orderSummary").innerHTML += "<p>Ваша заявка принята.</p>";
-        alert(firstname + ' ' + lastname + ' ,' + 'cкоро мы с Вами свяжемся для обсуждения коммерческого предложения.')
+        alert(firstname + ' ' + lastname + ' ,' + 'спасибо за отклик на вакансию. Скоро мы с вами свяжемся')
     } else {
         document.getElementById('orderSummary').style.color = 'blue';
         document.getElementById('orderSummary').innerHTML = 'Заполните все поля';

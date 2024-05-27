@@ -309,7 +309,7 @@
 
         </div>
 
-        <h4 class="title">Оставить заявку на вакансию</h4>
+        <h4 class="title">Оставить отклик на вакансию</h4>
         <h5>Если вас заинтересовала какая-либо вакансия, то оставьте Ваши контактные данные и мы рассмотрим Вашу кандитатуру</h5>
         <div class="Order">
             <div class="container1">
@@ -327,19 +327,17 @@
                         <span id="lastname_check"></span>
                     </div>
                     <div class="input_block">
-                        <input id="phone" onblur="checkPhone()" type="tel" placeholder="Номер телефона для связи"
-                            required />
+                        <input id="phone" onblur="checkPhone()" type="tel" placeholder="Номер телефона для связи" required />
                         <span id="phone_check"></span>
                     </div>
                     <div class="input_block">
-                        <input id="job" onblur="checkJob()" type="text" placeholder="На какую вакансию претендуете?"
-                            required />
+                        <input id="job" onblur="checkJob()" type="text" placeholder="На какую вакансию претендуете?" required />
                         <span id="job_check"></span>
                     </div>
                     <div class="input_block">
                         <label for="resume">Вложите ваше резюме</label>
                         <input id="resume" onblur="checkResume()" type="file"
-                            accept=".png, .jpeg, .doc, .docx, .pdf, .rtf">
+                            accept=".png, .jpg, .jpeg, .doc, .docx, .pdf, .rtf, .heic">
                         <span id="need_resume"></span>
                     </div>
                     <div class="button" onclick="Order()">

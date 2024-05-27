@@ -150,23 +150,23 @@ input {
 
 @keyframes bttn {
     0% {
-        background-color: #FFD429;
+        background-color: rgb(211, 0, 0);
     }
 
     25% {
-        background-color: rgb(235, 170, 8);
+        background-color: rgb(235, 61, 31);
     }
 
     50% {
-        background-color: yellow;
+        background-color: rgb(245, 116, 11);
     }
 
     75% {
-        background-color: rgb(235, 170, 8);
+        background-color: rgb(235, 61, 31);
     }
 
     100% {
-        background-color: #FFD429;
+        background-color: rgb(211, 0, 0);
     }
 }
 

@@ -83,11 +83,11 @@ function Order() {
     let secondname = document.getElementById('secondName').value;
     let lastname = document.getElementById('lastName').value;
     let phone = document.getElementById('phone').value;
-    var need = document.getElementById("need").value;
+    var dest = document.getElementById("need").value;
     
 
 
-    if (firstname != '' && secondname != '' && lastname != '' && phone != '' && need != '' ) {
+    if (firstname != '' && secondname != '' && lastname != '' && phone != '' && dest != '' ) {
         document.getElementById("orderSummary").innerHTML = " ";
         document.getElementById("orderSummary").innerHTML += "<p>Ваша заявка принята.</p>";
         alert(firstname + ' ' + lastname + ' ,' + 'cкоро мы с Вами свяжемся для обсуждения коммерческого предложения.')
