@@ -48,17 +48,19 @@ h1 {
     font-size: 1.7em;
 }
 
-.vacancy__card:nth-child(2) {
+
+.vacancy__card:nth-child(3n+1) {
     animation-delay: 0.1s;
 }
 
-.vacancy__card:nth-child(3) {
+.vacancy__card:nth-child(3n+2) {
     animation-delay: 0.2s;
 }
 
-.vacancy__card:nth-child(4) {
+.vacancy__card:nth-child(3n+3) {
     animation-delay: 0.3s;
 }
+
 
 .vacancy__card:hover {
     transition-duration: .2s;
@@ -246,6 +248,14 @@ label {
         margin-left: 20px;
         font-size: 1.5em;
     
+    }
+
+    .vacancy__card:nth-child(2n+1) {
+        animation-delay: 0.1s;
+    }
+    
+    .vacancy__card:nth-child(2n+2) {
+        animation-delay: 0.2s;
     }
 
 }
