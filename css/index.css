@@ -80,7 +80,7 @@ h2 {
 .main__inner__text {
     padding: 140px 80px 80px 140px;
     margin-bottom: 20px;
-    
+
     align-items: center;
     font-size: 2.3em;
     transform: skew(30deg);
@@ -88,26 +88,26 @@ h2 {
 
 }
 
-p{
+p {
     color: darkred;
     font-weight: 600;
     display: contents;
 
 }
 
-.inner__bg{
+.inner__bg {
     background: #e5e5e7;
     transform: skew(-30deg);
     padding: 30px;
     margin: 30px;
-   
+
 }
 
-.inner__bg .inner__text{
+.inner__bg .inner__text {
     transform: skew(30deg);
 }
 
-.company{
+.company {
     font-size: 2.5em;
 }
 
@@ -123,6 +123,14 @@ p{
 .history__text {
     font-size: 2em;
 
+}
+
+.history__text a {
+    text-decoration: underline;
+}
+
+.history__text a:hover{
+    color: rgb(23, 23, 199);
 }
 
 
@@ -175,9 +183,10 @@ h3 {
     margin-bottom: 20px;
 }
 
-.discription h3{
+.discription h3 {
     font-size: 2.5em;
 }
+
 .background3 {
     margin-top: 30px;
     width: 100%;
@@ -193,7 +202,7 @@ h3 {
     justify-content: center;
 }
 
-.discription__img{
+.discription__img {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -207,7 +216,7 @@ h3 {
     margin: 10px;
     margin-bottom: 40px;
     box-shadow: 0px 8px 14px 4px rgba(101, 101, 101, 0.36);
-    
+
 }
 
 .discription__plans:nth-child(2) {
@@ -267,7 +276,7 @@ h3 {
 
 
 @media screen and (max-width: 1920px) {
-    h1{
+    h1 {
         font-size: 2.5em;
     }
 
@@ -280,30 +289,33 @@ h3 {
         height: 700px;
     }
 
-    .discription h3{
+    .discription h3 {
         font-size: 2em;
     }
 
-    .inner__text{
+    .inner__text {
         font-size: 2em;
     }
 
-    .company{
+    .company {
         font-size: 2.3em;
     }
 
-    .background1{
+    .background1 {
         height: 900px;
 
     }
-    .background2{
+
+    .background2 {
         height: 900px;
 
     }
-    .background3{
+
+    .background3 {
         height: 900px;
     }
-    .background4{
+
+    .background4 {
         height: 900px;
     }
 
