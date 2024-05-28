@@ -1,3 +1,23 @@
+/*стандартные для страниц функции из header*/
+function copyEmail() {
+    navigator.clipboard.writeText
+        ("spkkalina@mail.ru");
+  }
+  
+  function copyPhone() {
+    navigator.clipboard.writeText
+        ("+7(34372) 5-36-91");
+  }
+
+  /*Плавная прокрутка вниз*/
+
+function scrollDown(){
+    $('html, body').animate({scrollTop: $(document).height() - $(window).height()-200}, 600);
+  }
+  
+
+/*Валидация*/
+
 function InputField() {
     document.getElementById("sending").reset();
 }
@@ -18,10 +38,10 @@ function checkFirstName() {
 }
 
 function checkSecondName() {
-    var last = document.getElementById("secondName").value;
+    var second = document.getElementById("secondName").value;
     var regex = /^[а-яА-Я\s]{2,30}$/;
 
-    if (regex.test(last)) {
+    if (regex.test(second)) {
         document.getElementById("secondname_check").style.color = "green";
         document.getElementById("secondname_check").innerHTML = "✓";
         return true;
@@ -62,17 +82,17 @@ function checkPhone() {
     }
 }
 
-function checkNeed() {
-    var dest = document.getElementById("need").value;
-    var regex = /^[а-яА-Я\s.,\d ]{5,250}$/;
+function checkJob() {
+    var dest = document.getElementById("job").value;
+    var regex = /^[а-яА-Я\s.,\d ]{5,100}$/;
 
     if (regex.test(dest)) {
-        document.getElementById("need_check").style.color = "green";
-        document.getElementById("need_check").innerHTML = "✓";
+        document.getElementById("job_check").style.color = "green";
+        document.getElementById("job_check").innerHTML = "✓";
         return true;
     } else {
-        document.getElementById("need_check").style.color = "red";
-        document.getElementById("need_check").innerHTML = "От 5 до 250 символов";
+        document.getElementById("job_check").style.color = "red";
+        document.getElementById("job_check").innerHTML = "От 5 до 100 символов";
         return false;
     }
 }
@@ -83,17 +103,15 @@ function Order() {
     let secondname = document.getElementById('secondName').value;
     let lastname = document.getElementById('lastName').value;
     let phone = document.getElementById('phone').value;
-    var dest = document.getElementById("need").value;
+    let dest = document.getElementById("job").value;
+    
 
 
-
-    if (firstname != '' && secondname != '' && lastname != '' && phone != '' && dest != '') {
+    if (firstname != '' && secondname != '' && lastname != '' && phone != '' && dest != '' ) {
         document.getElementById("orderSummary").innerHTML = " ";
         document.getElementById("orderSummary").innerHTML += "<p>Ваша заявка принята.</p>";
         sendMail();
-        alert(firstname + ' ' + lastname + ' ,' + 'cкоро мы с Вами свяжемся для обсуждения коммерческого предложения.')
-
-
+        alert(firstname + ' ' + lastname + ' ,' + 'спасибо за отклик на вакансию. Скоро мы с вами свяжемся')
     } else {
         document.getElementById('orderSummary').style.color = 'blue';
         document.getElementById('orderSummary').innerHTML = 'Заполните все поля';
@@ -113,11 +131,11 @@ function sendMail() {
         firstName: document.getElementById('firstName').value,
         phone: document.getElementById('phone').value,
         email: document.getElementById('email').value,
-        need: document.getElementById("need").value,
+        job: document.getElementById("job").value,
     };
 
     const serviceID = "service_ij61c6h";
-    const templateID = "template_m6pmhc6";
+    const templateID = "template_rgizucm";
 
     emailjs.send(serviceID, templateID, params)
         .then(res => {
@@ -126,7 +144,7 @@ function sendMail() {
             document.getElementById('firstName').value = "";
             document.getElementById('phone').value = "";
             document.getElementById('email').value = "";
-            document.getElementById("need").value = "";
+            document.getElementById("job").value = "";
             console.log(res);
         })
         .catch((err) => console.log(err));

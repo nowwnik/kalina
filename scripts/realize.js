@@ -1,4 +1,47 @@
-function InputField() {
+/*стандартные для страниц функции из header*/
+function copyEmail() {
+    navigator.clipboard.writeText
+        ("spkkalina@mail.ru");
+  }
+  
+  function copyPhone() {
+    navigator.clipboard.writeText
+        ("+7(34372) 5-36-91");
+  }
+
+  /*Настройка свайпера на старнице*/
+
+  const swiper2 = new Swiper(".swiper2", {
+    cssMode: true,
+    loop: true,
+    autheight: true,
+    autoplay: {
+      delay: 5000,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    
+    mousewheel: true,
+    keyboard: true,
+    on: {
+      init() {
+        this.el.addEventListener('mouseenter', () => {
+          this.autoplay.stop();
+        });
+  
+        this.el.addEventListener('mouseleave', () => {
+          this.autoplay.start();
+        });
+      }
+    }
+  });
+
+
+  /*Валидация данных*/
+
+  function InputField() {
     document.getElementById("sending").reset();
 }
 
@@ -18,10 +61,10 @@ function checkFirstName() {
 }
 
 function checkSecondName() {
-    var second = document.getElementById("secondName").value;
+    var last = document.getElementById("secondName").value;
     var regex = /^[а-яА-Я\s]{2,30}$/;
 
-    if (regex.test(second)) {
+    if (regex.test(last)) {
         document.getElementById("secondname_check").style.color = "green";
         document.getElementById("secondname_check").innerHTML = "✓";
         return true;
@@ -62,17 +105,17 @@ function checkPhone() {
     }
 }
 
-function checkJob() {
-    var dest = document.getElementById("job").value;
-    var regex = /^[а-яА-Я\s.,\d ]{5,100}$/;
+function checkNeed() {
+    var dest = document.getElementById("need").value;
+    var regex = /^[а-яА-Я\s.,\d ]{5,250}$/;
 
     if (regex.test(dest)) {
-        document.getElementById("job_check").style.color = "green";
-        document.getElementById("job_check").innerHTML = "✓";
+        document.getElementById("need_check").style.color = "green";
+        document.getElementById("need_check").innerHTML = "✓";
         return true;
     } else {
-        document.getElementById("job_check").style.color = "red";
-        document.getElementById("job_check").innerHTML = "От 5 до 100 символов";
+        document.getElementById("need_check").style.color = "red";
+        document.getElementById("need_check").innerHTML = "От 5 до 250 символов";
         return false;
     }
 }
@@ -83,15 +126,17 @@ function Order() {
     let secondname = document.getElementById('secondName').value;
     let lastname = document.getElementById('lastName').value;
     let phone = document.getElementById('phone').value;
-    let dest = document.getElementById("job").value;
-    
+    var dest = document.getElementById("need").value;
 
 
-    if (firstname != '' && secondname != '' && lastname != '' && phone != '' && dest != '' ) {
+
+    if (firstname != '' && secondname != '' && lastname != '' && phone != '' && dest != '') {
         document.getElementById("orderSummary").innerHTML = " ";
         document.getElementById("orderSummary").innerHTML += "<p>Ваша заявка принята.</p>";
         sendMail();
-        alert(firstname + ' ' + lastname + ' ,' + 'спасибо за отклик на вакансию. Скоро мы с вами свяжемся')
+        alert(firstname + ' ' + lastname + ' ,' + 'cкоро мы с Вами свяжемся для обсуждения коммерческого предложения.')
+
+
     } else {
         document.getElementById('orderSummary').style.color = 'blue';
         document.getElementById('orderSummary').innerHTML = 'Заполните все поля';
@@ -111,11 +156,11 @@ function sendMail() {
         firstName: document.getElementById('firstName').value,
         phone: document.getElementById('phone').value,
         email: document.getElementById('email').value,
-        job: document.getElementById("job").value,
+        need: document.getElementById("need").value,
     };
 
     const serviceID = "service_ij61c6h";
-    const templateID = "template_rgizucm";
+    const templateID = "template_m6pmhc6";
 
     emailjs.send(serviceID, templateID, params)
         .then(res => {
@@ -124,7 +169,7 @@ function sendMail() {
             document.getElementById('firstName').value = "";
             document.getElementById('phone').value = "";
             document.getElementById('email').value = "";
-            document.getElementById("job").value = "";
+            document.getElementById("need").value = "";
             console.log(res);
         })
         .catch((err) => console.log(err));
