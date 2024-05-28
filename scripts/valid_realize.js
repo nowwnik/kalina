@@ -21,7 +21,7 @@ function checkSecondName() {
     var last = document.getElementById("secondName").value;
     var regex = /^[а-яА-Я\s]{2,30}$/;
 
-    if (regex.test(second)) {
+    if (regex.test(last)) {
         document.getElementById("secondname_check").style.color = "green";
         document.getElementById("secondname_check").innerHTML = "✓";
         return true;
@@ -84,13 +84,16 @@ function Order() {
     let lastname = document.getElementById('lastName').value;
     let phone = document.getElementById('phone').value;
     var dest = document.getElementById("need").value;
-    
 
 
-    if (firstname != '' && secondname != '' && lastname != '' && phone != '' && dest != '' ) {
+
+    if (firstname != '' && secondname != '' && lastname != '' && phone != '' && dest != '') {
         document.getElementById("orderSummary").innerHTML = " ";
         document.getElementById("orderSummary").innerHTML += "<p>Ваша заявка принята.</p>";
+        sendMail();
         alert(firstname + ' ' + lastname + ' ,' + 'cкоро мы с Вами свяжемся для обсуждения коммерческого предложения.')
+
+
     } else {
         document.getElementById('orderSummary').style.color = 'blue';
         document.getElementById('orderSummary').innerHTML = 'Заполните все поля';
@@ -98,4 +101,31 @@ function Order() {
 
     const text = document.getElementById("hidden");
     text.style.display = "block";
+}
+
+(function () {emailjs.init({publicKey: "gKR6bffspOUk4UZPY",});})();
+
+function sendMail() {
+
+    var params = {
+        secondName: document.getElementById('secondName').value,
+        lastName: document.getElementById('lastName').value,
+        firstName: document.getElementById('firstName').value,
+        phone: document.getElementById('phone').value,
+        need: document.getElementById("need").value,
+    };
+
+    const serviceID = "service_vda43ob";
+    const templateID = "template_m6pmhc6";
+
+    emailjs.send(serviceID, templateID, params)
+        .then(res => {
+            document.getElementById('secondName').value = "";
+            document.getElementById('lastName').value = "";
+            document.getElementById('firstName').value = "";
+            document.getElementById('phone').value = "";
+            document.getElementById("need").value = "";
+            console.log(res);
+        })
+        .catch((err) => console.log(err));
 }
