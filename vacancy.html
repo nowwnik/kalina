@@ -32,7 +32,8 @@
                     </nav>
 
                     <div class="contact__information" onclick="copyPhone()">
-                        Контакты: <br> <a href="#" title="Скопировать телефон">+7(34372) 5-36-91</a><br> +7-902-887-44-28
+                        Контакты: <br> <a href="#" title="Скопировать телефон">+7(34372) 5-36-91</a><br>
+                        +7-902-887-44-28
                     </div>
                     <div class="contact__information" onclick="copyEmail()"> email: <br> <a href="#"
                             title="Скопировать email">spkkalina@mail.ru</a></div>
@@ -43,7 +44,7 @@
 
         <div class="main">
             <div class="vacancy">
-                
+
                 <div class="vacancy__card wow animate__animated animate__fadeInUp">
                     <img class="vacancy__card__img" src="images/vacancy/1.jpg" alt="">
                     <div class="vacancy__card__text">
@@ -307,50 +308,56 @@
             </div>
 
         </div>
-
-        <h4 class="title">Оставить отклик на вакансию</h4>
-        <h5>Если вас заинтересовала какая-либо вакансия, то оставьте Ваши контактные данные и мы рассмотрим Вашу кандитатуру</h5>
-        <div class="Order">
-            <div class="container1">
-                <form>
-                    <div class="input_block">
-                        <input id="secondName" onblur="checkSecondName()" type="text" placeholder="Фамилия" required />
-                        <span id="secondname_check"></span>
-                    </div>
-                    <div class="input_block">
-                        <input id="firstName" onblur="checkFirstName()" type="text" placeholder="Имя" required />
-                        <span id="firstname_check"></span>
-                    </div>
-                    <div class="input_block">
-                        <input id="lastName" onblur="checkLastName()" type="text" placeholder="Отчетство" required />
-                        <span id="lastname_check"></span>
-                    </div>
-                    <div class="input_block">
-                        <input id="phone" onblur="checkPhone()" type="tel" placeholder="Номер телефона для связи" required />
-                        <span id="phone_check"></span>
-                    </div>
-                    <div class="input_block">
-                        <input id="email" type="email" placeholder="Email (не обязательно)" required />
-                    </div>
-                    <div class="input_block">
-                        <input id="job" onblur="checkJob()" type="text" placeholder="На какую вакансию претендуете?" required />
-                        <span id="job_check"></span>
-                    </div>
-                    <div class="input_block">
-                        <label for="resume">Вложите ваше резюме</label>
-                        <input id="resume" onblur="checkResume()" type="file"
-                            accept=".png, .jpg, .jpeg, .doc, .docx, .pdf, .rtf, .heic">
-                        <span id="need_resume"></span>
-                    </div>
-                    <div class="button" onclick="Order()">
-                        Отправить данные
-                    </div>
-                </form>
+        <div class="order__animation wow animate__animated animate__fadeInUp">
+            <h4 class="title">Оставить отклик на вакансию</h4>
+            <h5>Если вас заинтересовала какая-либо вакансия, то оставьте Ваши контактные данные и мы рассмотрим Вашу
+                кандитатуру</h5>
+            <div class="Order">
+                <div class="container1">
+                    <form>
+                        <div class="input_block">
+                            <input id="secondName" onblur="checkSecondName()" type="text" placeholder="Фамилия"
+                                required />
+                            <span id="secondname_check"></span>
+                        </div>
+                        <div class="input_block">
+                            <input id="firstName" onblur="checkFirstName()" type="text" placeholder="Имя" required />
+                            <span id="firstname_check"></span>
+                        </div>
+                        <div class="input_block">
+                            <input id="lastName" onblur="checkLastName()" type="text" placeholder="Отчетство"
+                                required />
+                            <span id="lastname_check"></span>
+                        </div>
+                        <div class="input_block">
+                            <input id="phone" onblur="checkPhone()" type="tel" placeholder="Номер телефона для связи"
+                                required />
+                            <span id="phone_check"></span>
+                        </div>
+                        <div class="input_block">
+                            <input id="email" type="email" placeholder="Email (не обязательно)" required />
+                        </div>
+                        <div class="input_block">
+                            <input id="job" onblur="checkJob()" type="text" placeholder="На какую вакансию претендуете?"
+                                required />
+                            <span id="job_check"></span>
+                        </div>
+                        <div class="input_block">
+                            <label for="resume">Вложите ваше резюме</label>
+                            <input id="resume" onblur="checkResume()" type="file"
+                                accept=".png, .jpg, .jpeg, .doc, .docx, .pdf, .rtf, .heic">
+                            <span id="need_resume"></span>
+                        </div>
+                        <div class="button" onclick="Order()">
+                            Отправить данные
+                        </div>
+                    </form>
+                </div>
             </div>
-        </div>
-        </form>
-        <div id="hidden" class="order-summary">
-            <span id="orderSummary"></span>
+            </form>
+            <div id="hidden" class="order-summary">
+                <span id="orderSummary"></span>
+            </div>
         </div>
 
         <div class="footer">

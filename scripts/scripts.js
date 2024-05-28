@@ -65,5 +65,5 @@ function copyPhone() {
 }
 
 function scrollDown(){
-  $('html, body').animate({scrollTop: $(document).height() - $(window).height()-100}, 600);
+  $('html, body').animate({scrollTop: $(document).height() - $(window).height()-200}, 600);
 }
