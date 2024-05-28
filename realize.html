@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Коммерция</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/realize.css">
 
@@ -34,7 +35,8 @@
                     </nav>
 
                     <div class="contact__information" onclick="copyPhone()">
-                        Контакты: <br> <a href="#" title="Скопировать телефон">+7(34372) 5-36-91</a><br> +7-902-887-44-28
+                        Контакты: <br> <a href="#" title="Скопировать телефон">+7(34372) 5-36-91</a><br>
+                        +7-902-887-44-28
                     </div>
                     <div class="contact__information" onclick="copyEmail()"> email: <br> <a href="#"
                             title="Скопировать email">spkkalina@mail.ru</a></div>
@@ -42,25 +44,29 @@
         </header>
         <div class="main">
             <h1>Коммерческие предложения</h1>
-            <div class="swiper2">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide" style="background-image: url(images/swiper_realize/peas.webp)"></div>
-                    <div class="swiper-slide" style="background-image: url(images/swiper_realize/herbs.webp)"></div>
-                </div>
+            <div class="swiper2_cotainer">
+                <div class="swiper2">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide" style="background-image: url(images/swiper_realize/peas.webp)"></div>
+                        <div class="swiper-slide" style="background-image: url(images/swiper_realize/herbs.webp)"></div>
+                    </div>
 
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
             </div>
-            <h2>Реализация кормов для крупного рогатого скота</h2>
-            <div class="Block">
-                <ul>
-                    <li>Сенаж гороховый, урожай 2022 года по цене 3 р/кг (в т.ч. НДС).</li>
-                    <li>Сенаж гороховый, урожай 2023 года по цене 5 р/кг (в т.ч. НДС).</li>
-                    <li>Сенаж многолетних трав, урожай 2023 года по цене 5 р/кг (в т.ч НДС).</li>
-                </ul>
-                <div class="Left">Самовывоз. Погрузка силами и средствами продавца.</div>
+            <div class="feed">
+                <h2>Реализация кормов для крупного рогатого скота</h2>
+                <div class="Block">
+                    <ul>
+                        <li>Сенаж гороховый, урожай 2022 года по цене 3 р/кг (в т.ч. НДС).</li>
+                        <li>Сенаж гороховый, урожай 2023 года по цене 5 р/кг (в т.ч. НДС).</li>
+                        <li>Сенаж многолетних трав, урожай 2023 года по цене 5 р/кг (в т.ч НДС).</li>
+                    </ul>
+                    <div class="Left">Самовывоз. Погрузка силами и средствами продавца</div>
+                </div>
             </div>
-            <img class="Cow" src="images/swiper_realize/cow.webp">
+            <div class="Cow"></div>
             <h2>Реализация племенных нетелей</h2>
             <div class="Block">
                 <ul>
@@ -76,47 +82,53 @@
                 </ul>
             </div>
 
-
-            <h2 class="title">Оформить заказ</h2>
-            <h3>Оставьте Ваши контактные данные и мы вышлем Вам индивидуальное коммерческое предложение</h3>
-            <div class="Order">
-                <div class="container1">
-                    <form>
-                        <div class="input_block">
-                            <input id="secondName" onblur="checkSecondName()" type="text" placeholder="Фамилия"required />
-                            <span id="secondname_check" style=" font-size:1.2em; font-weight: 800;"></span>
+            <div class="order__animation wow animate__animated animate__fadeInUp">
+                <h2 class="title">Оформить заказ</h2>
+                <h3>Оставьте Ваши контактные данные и мы вышлем Вам индивидуальное коммерческое предложение</h3>
+                <div class="Order">
+                    <div class="container1">
+                        <form>
+                            <div class="input_block">
+                                <input id="secondName" onblur="checkSecondName()" type="text" placeholder="Фамилия"
+                                    required />
+                                <span id="secondname_check"></span>
+                            </div>
+                            <div class="input_block">
+                                <input id="firstName" onblur="checkFirstName()" type="text" placeholder="Имя"
+                                    required />
+                                <span id="firstname_check"></span>
+                            </div>
+                            <div class="input_block">
+                                <input id="lastName" onblur="checkLastName()" type="text" placeholder="Отчество"
+                                    required />
+                                <span id="lastname_check"></span>
+                            </div>
+                            <div class="input_block">
+                                <input id="phone" onblur="checkPhone()" type="tel" placeholder="Номер телефона"
+                                    required />
+                                <span id="phone_check"></span>
+                            </div>
+                            <div class="input_block">
+                                <input id="email" type="email" placeholder="Email (не обязательно)" required />
+                            </div>
+                            <div class="input_block">
+                                <input id="need" onblur="checkNeed()" type="text" placeholder="Что вам необходимо?"
+                                    required />
+                                <span id="need_check"></span>
+                            </div>
+                            <div class="button" onclick="Order()">
+                                Отправить данные
+                            </div>
+                        </form>
+                        <div id="hidden" class="order-summary">
+                            <span id="orderSummary"></span>
                         </div>
-                        <div class="input_block">
-                            <input id="firstName" onblur="checkFirstName()" type="text" placeholder="Имя" required />
-                            <span id="firstname_check" style=" font-size:1.2em; font-weight: 800;"></span>
-                        </div>
-                        <div class="input_block">
-                            <input id="lastName" onblur="checkLastName()" type="text" placeholder="Отчество" required />
-                            <span id="lastname_check" style=" font-size:1.2em; font-weight: 800;"></span>
-                        </div>
-                        <div class="input_block">
-                            <input id="phone" onblur="checkPhone()" type="tel" placeholder="Номер телефона" required />
-                            <span id="phone_check" style=" font-size:1.2em; font-weight: 800;"></span>
-                        </div>
-                        <div class="input_block">
-                            <input id="email" type="email" placeholder="Email (не обязательно)" required />
-                        </div>
-                        <div class="input_block">
-                            <input id="need" onblur="checkNeed()" type="text" placeholder="Что вам необходимо?" required />
-                            <span id="need_check" style=" font-size:1.2em; font-weight: 800;"></span>
-                        </div>
-                        <div class="button" onclick="Order()">
-                            Отправить данные
-                        </div>
-                    </form>
-                    <div id="hidden" class="order-summary">
-                        <span id="orderSummary"></span>
                     </div>
+
                 </div>
-                
             </div>
-            
-           
+
+
 
         </div>
         <div class="footer">
@@ -139,9 +151,13 @@
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+    <script>wow = new WOW({ animateClass: 'animate__animated', offset: 300 }); wow.init();</script>
     <script src="scripts/scripts.js"></script>
     <script src="scripts/valid_realize.js"></script>
-    
+
 </body>
 
 </html>
