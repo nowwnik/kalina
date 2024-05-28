@@ -172,5 +172,8 @@ function sendMail() {
             document.getElementById("need").value = "";
             console.log(res);
         })
-        .catch((err) => console.log(err));
+        .catch((err) => {
+            console.log(err);
+            alert('Произошла ошибка при отправке сообщения. Пожалуйста, свяжитесь с нами по почте spkkalina@mail.ru или телефону +7(34372) 5-36-91');
+        });
 }

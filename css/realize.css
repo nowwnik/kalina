@@ -87,6 +87,12 @@ h2 {
 
 }
 
+.call_me_please{
+    text-align: center;
+    font-size: 1.8em;
+    font-weight: 600;
+}
+
 h3 {
     margin-top: -20px;
     text-align: center;
