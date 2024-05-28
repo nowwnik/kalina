@@ -64,7 +64,7 @@ function checkPhone() {
 
 function checkNeed() {
     var dest = document.getElementById("need").value;
-    var regex = /^[а-яА-Я\s.,\d ]{5,100}$/;
+    var regex = /^[а-яА-Я\s.,\d ]{5,250}$/;
 
     if (regex.test(dest)) {
         document.getElementById("need_check").style.color = "green";
@@ -72,7 +72,7 @@ function checkNeed() {
         return true;
     } else {
         document.getElementById("need_check").style.color = "red";
-        document.getElementById("need_check").innerHTML = "От 5 до 100 символов";
+        document.getElementById("need_check").innerHTML = "От 5 до 250 символов";
         return false;
     }
 }
@@ -112,6 +112,7 @@ function sendMail() {
         lastName: document.getElementById('lastName').value,
         firstName: document.getElementById('firstName').value,
         phone: document.getElementById('phone').value,
+        email: document.getElementById('email').value,
         need: document.getElementById("need").value,
     };
 
@@ -124,6 +125,7 @@ function sendMail() {
             document.getElementById('lastName').value = "";
             document.getElementById('firstName').value = "";
             document.getElementById('phone').value = "";
+            document.getElementById('email').value = "";
             document.getElementById("need").value = "";
             console.log(res);
         })

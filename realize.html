@@ -83,41 +83,40 @@
                 <div class="container1">
                     <form>
                         <div class="input_block">
+                            <input id="secondName" onblur="checkSecondName()" type="text" placeholder="Фамилия"required />
+                            <span id="secondname_check" style=" font-size:1.2em; font-weight: 800;"></span>
+                        </div>
+                        <div class="input_block">
                             <input id="firstName" onblur="checkFirstName()" type="text" placeholder="Имя" required />
-                            <span id="firstname_check"></span>
+                            <span id="firstname_check" style=" font-size:1.2em; font-weight: 800;"></span>
                         </div>
                         <div class="input_block">
-                            <input id="secondName" onblur="checkSecondName()" type="text" placeholder="Фамилия"
-                                required />
-                            <span id="secondname_check"></span>
-                        </div>
-                        <div class="input_block">
-                            <input id="lastName" onblur="checkLastName()" type="text" placeholder="Отчетство"
-                                required />
-                            <span id="lastname_check"></span>
+                            <input id="lastName" onblur="checkLastName()" type="text" placeholder="Отчество" required />
+                            <span id="lastname_check" style=" font-size:1.2em; font-weight: 800;"></span>
                         </div>
                         <div class="input_block">
                             <input id="phone" onblur="checkPhone()" type="tel" placeholder="Номер телефона" required />
-                            <span id="phone_check"></span>
+                            <span id="phone_check" style=" font-size:1.2em; font-weight: 800;"></span>
                         </div>
                         <div class="input_block">
-                            <input id="need" onblur="checkNeed()" type="text" placeholder="Что вам необходимо?"
-                                required />
-                            <span id="need_check"></span>
+                            <input id="email" type="email" placeholder="Email (не обязательно)" required />
+                        </div>
+                        <div class="input_block">
+                            <input id="need" onblur="checkNeed()" type="text" placeholder="Что вам необходимо?" required />
+                            <span id="need_check" style=" font-size:1.2em; font-weight: 800;"></span>
                         </div>
                         <div class="button" onclick="Order()">
                             Отправить данные
                         </div>
                     </form>
+                    <div id="hidden" class="order-summary">
+                        <span id="orderSummary"></span>
+                    </div>
                 </div>
+                
             </div>
-            </form>
-            <div id="hidden" class="order-summary">
-                <span id="orderSummary"></span>
-            </div>
-
-
-
+            
+           
 
         </div>
         <div class="footer">
