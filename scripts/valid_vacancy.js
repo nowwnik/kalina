@@ -90,6 +90,7 @@ function Order() {
     if (firstname != '' && secondname != '' && lastname != '' && phone != '' && dest != '' ) {
         document.getElementById("orderSummary").innerHTML = " ";
         document.getElementById("orderSummary").innerHTML += "<p>Ваша заявка принята.</p>";
+        sendMail();
         alert(firstname + ' ' + lastname + ' ,' + 'спасибо за отклик на вакансию. Скоро мы с вами свяжемся')
     } else {
         document.getElementById('orderSummary').style.color = 'blue';
@@ -98,4 +99,33 @@ function Order() {
 
     const text = document.getElementById("hidden");
     text.style.display = "block";
+}
+
+(function () {emailjs.init({publicKey: "gKR6bffspOUk4UZPY",});})();
+
+function sendMail() {
+
+    var params = {
+        secondName: document.getElementById('secondName').value,
+        lastName: document.getElementById('lastName').value,
+        firstName: document.getElementById('firstName').value,
+        phone: document.getElementById('phone').value,
+        email: document.getElementById('email').value,
+        job: document.getElementById("job").value,
+    };
+
+    const serviceID = "service_ij61c6h";
+    const templateID = "template_rgizucm";
+
+    emailjs.send(serviceID, templateID, params)
+        .then(res => {
+            document.getElementById('secondName').value = "";
+            document.getElementById('lastName').value = "";
+            document.getElementById('firstName').value = "";
+            document.getElementById('phone').value = "";
+            document.getElementById('email').value = "";
+            document.getElementById("job").value = "";
+            console.log(res);
+        })
+        .catch((err) => console.log(err));
 }

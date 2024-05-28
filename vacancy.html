@@ -314,12 +314,12 @@
             <div class="container1">
                 <form>
                     <div class="input_block">
-                        <input id="firstName" onblur="checkFirstName()" type="text" placeholder="Имя" required />
-                        <span id="firstname_check"></span>
-                    </div>
-                    <div class="input_block">
                         <input id="secondName" onblur="checkSecondName()" type="text" placeholder="Фамилия" required />
                         <span id="secondname_check"></span>
+                    </div>
+                    <div class="input_block">
+                        <input id="firstName" onblur="checkFirstName()" type="text" placeholder="Имя" required />
+                        <span id="firstname_check"></span>
                     </div>
                     <div class="input_block">
                         <input id="lastName" onblur="checkLastName()" type="text" placeholder="Отчетство" required />
@@ -328,6 +328,9 @@
                     <div class="input_block">
                         <input id="phone" onblur="checkPhone()" type="tel" placeholder="Номер телефона для связи" required />
                         <span id="phone_check"></span>
+                    </div>
+                    <div class="input_block">
+                        <input id="email" type="email" placeholder="Email (не обязательно)" required />
                     </div>
                     <div class="input_block">
                         <input id="job" onblur="checkJob()" type="text" placeholder="На какую вакансию претендуете?" required />
@@ -369,8 +372,9 @@
         </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
     <script>wow = new WOW({ animateClass: 'animate__animated', offset: 300 }); wow.init();</script>
     <script src="scripts/scripts.js"></script>
     <script src="scripts/valid_vacancy.js"></script>
