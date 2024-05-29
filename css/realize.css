@@ -41,6 +41,10 @@ h2 {
     color: darkred;
 }
 
+.feed {
+    margin: 80px;
+}
+
 .Block {
     align-items: center;
     display: flex;
@@ -68,10 +72,6 @@ h2 {
     margin-top: 20px;
 }
 
-.feed{
-    margin: 80px;
-}
-
 .Cow {
     margin-top: 1%;
     width: 100%;
@@ -87,7 +87,7 @@ h2 {
 
 }
 
-.call_me_please{
+.call_me_please {
     text-align: center;
     font-size: 1.8em;
     font-weight: 600;
@@ -108,7 +108,7 @@ h3 {
 
 .container1 {
     margin-top: 40px;
-    
+
 }
 
 .form {
@@ -129,18 +129,18 @@ input {
     font-family: 'Ubuntu', sans-serif;
     font-size: 2em;
     margin-bottom: 10px;
-   
+
 }
 
-.input_block span{
-    font-size:1.7em; 
+.input_block span {
+    font-size: 1.7em;
     font-weight: 800;
 }
 
-.input_block:nth-child(6){
+.input_block:nth-child(6) {
     height: 200px;
     margin-bottom: 30px;
-    
+
 }
 
 
@@ -208,37 +208,204 @@ input {
     justify-content: center;
 }
 
+
+
+
+
+
+/*Адаптация*/
+
+
+/* Extra large devices (large desktops, 1920px and up)*/
 @media screen and (max-width: 1920px) {
 
     .swiper-slide {
         height: 600px;
     }
 
-    h1{
+    h1 {
         font-size: 2.6em;
     }
 
-    h2{
+    h2 {
         font-size: 2em;
     }
 
-    .Block ul{
+    .Block ul {
         font-size: 2em;
     }
 
-    .Cow{
+    .Cow {
         height: 800px;
     }
 
-    input{
+    input {
         font-size: 1.5em;
     }
-    
-    .input_block span{
-        font-size:1.3em;
+
+    .input_block span {
+        font-size: 1.3em;
     }
 
-    .button{
+    .button {
         font-size: 1.3em;
+    }
+}
+
+/* Large devices (notebook, 992px and up)*/
+@media screen and (max-width: 992px) {}
+
+/* Medium devices (tablets, 768px and up)*/
+@media screen and (max-width: 768px) {
+    h1 {
+        margin: 37px;
+        font-size: 42px;
+    }
+
+    .swiper-slide {
+        height: 500px;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        display: none;
+    }
+
+    h2 {
+        margin: 30px;
+        font-size: 36px;
+    }
+
+    .feed {
+        margin: 40px;
+    }
+
+    .title {
+        margin-top: 50px;
+
+    }
+
+    h3 {
+        font-size: 26px;
+    }
+
+    .call_me_please {
+        font-size: 24px;
+    }
+
+    .container1 {
+        margin-top: 40px;
+
+    }
+
+    input {
+        width: 550px;
+        font-size: 24px;
+        margin-bottom: 6px;
+    }
+
+    .input_block span {
+        font-size: 24px;
+        font-weight: 400;
+    }
+
+    .button {
+        height: 60px;
+        font-size: 24px;
+    }
+
+    .order-summary {
+        font-size: 26px;
+        margin-top: 25px;
+    }
+
+}
+
+/*Small devices (phones, 576px and up)*/
+@media screen and (max-width: 576px) {
+    h1 {
+        margin: 25px;
+        font-size: 25px;
+    }
+
+    .swiper-slide {
+        height: 300px;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        display: none;
+    }
+
+    h2 {
+        margin: 20px;
+        font-size: 22px;
+    }
+
+    .Block ul {
+        margin-top: -10px;
+        font-size: 18px;
+    }
+
+    .Block li {
+        line-height: 25px;
+    }
+
+    .Left {
+        font-size: 18px;
+        margin-top: 15px;
+    }
+
+    .Cow {
+        height: 600px;
+    }
+
+    .feed {
+        margin: 25px;
+    }
+
+    .title {
+        margin-top: 35px;
+
+    }
+
+    h3 {
+        font-size: 18px;
+        margin-top: -10px;
+    }
+
+    .call_me_please {
+        font-size: 16px;
+    }
+
+    .container1 {
+        margin-top: 20px;
+
+    }
+
+    input {
+        width: 350px;
+        font-size: 18px;
+        margin-bottom: 6px;
+        min-height: 40px;
+    }
+
+    .input_block span {
+        font-size: 18px;
+    }
+
+    .input_block:nth-child(6) {
+        height: 150px;
+        margin-bottom: 15px;
+    }
+
+    .button {
+        height: 40px;
+        font-size: 18px;
+    }
+
+    .order-summary {
+        font-size: 18px;
+        margin-top: 20px;
     }
 }
