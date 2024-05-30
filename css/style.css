@@ -140,13 +140,10 @@ body {
 
 
 
-
-
-
 /*Адаптация*/
 
 
-/* Extra large devices (large desktops, 1920px and up)*/
+
 @media screen and (max-width: 1920px) {
 
     .header__inner {
@@ -161,12 +158,30 @@ body {
         font-size: 1.2em;
     }
 }
-/*
-/* Large devices (notebook, 992px and up)*/
-@media screen and (max-width: 992px) {}
 
-/* Medium devices (tablets, 768px and up)*/
-@media screen and (max-width: 820px) {}
 
-/*Small devices (phones, 576px and up)*/
-@media screen and (max-width: 576px) {}
+
+@media screen and (max-width: 825px) {
+
+    .logo__img{
+        margin: 0px;
+    }
+    .menu{
+        margin: 0;
+        margin-top: 10px;
+    }
+    .menu__list{
+        gap: 5px;
+    }
+    .header__inner{
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+    .contact__information{
+        width: 47%;
+        flex-direction: column;
+        margin-right: 0;
+        margin-left: 10px;
+    }
+
+}
