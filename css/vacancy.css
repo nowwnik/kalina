@@ -312,7 +312,7 @@ label {
 
     h2 {
         font-size: 40px;
-        margin-top: -10px;
+        margin-top: 10px;
         margin-bottom: 10px;
     }
 
@@ -321,60 +321,69 @@ label {
     }
     
     .vacancy {
-        margin-left: 5px;
-        margin-right: 5px;
+        margin-left: -5px;
+        margin-right: -5px;
     }
-    
+
+    .vacancy__card__text {
+        margin-left: 30px;
+        font-size: 28px;
+    }
+
+    .vacancy__card {
+        max-width: 100%;
+    }
+
     .vacancy__card:nth-child(1) {
-        height: 500px;
+        height: 1090px;
     }
 
     .vacancy__card:nth-child(2) {
-        height: 780px;
+        height: 1120px;
     }
 
     .vacancy__card:nth-child(3) {
-        height: 800px;
+        height: 1120px;
     }
 
     .vacancy__card:nth-child(4) {
-        height: 990px;
+        height: 1360px;
     }
 
     .vacancy__card:nth-child(5) {
-        height: 650px;
+        height: 1060px;
     }
 
     .vacancy__card:nth-child(6) {
-        height: 830px;
+        height: 1220px;
     }
 
     .vacancy__card:nth-child(7) {
-        height: 820px;
+        height: 1200px;
     }
 
     .vacancy__card:nth-child(8) {
-        height: 810px;
+        height: 1220px;
     }
 
     .vacancy__card:nth-child(9) {
-        height: 790px;
+        height: 1190px;
     }
 
     .vacancy__card:nth-child(10) {
-        height: 820px;
+        height: 1250px;
     }
 
     .vacancy__card:nth-child(11) {
-        height: 910px;
+        height: 1280px;
     }
 
     .vacancy__card:nth-child(12) {
-        height: 890px;
+        height: 1280px;
     }
     
     .vacancy__card:nth-child(13) {
-        height: 740px;
+        height: 1170px;
     }
 
     h4 {
@@ -402,6 +411,7 @@ label {
         width: 550px;
         font-size: 28px;
         margin-bottom: 8px;
+        min-height: 60px;
     }
     
     .input_block span {
@@ -419,6 +429,7 @@ label {
     
     .button {
         font-size: 25px;
+        height: 60px;
     }
     
 }
@@ -443,87 +454,103 @@ label {
     }
     
     .vacancy {
-        margin-left: -10px;
-        margin-right: -10px;
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+
+    .vacancy__card__text {
+        font-size: 20px;
+    }
+
+    .vacancy__card {
+        max-width: 100%;
     }
 
     .vacancy__card:nth-child(1) {
-        height: 750px;
-    }
-
-    .vacancy__card:nth-child(2) {
-        height: 780px;
-    }
-
-    .vacancy__card:nth-child(3) {
-        height: 800px;
-    }
-
-    .vacancy__card:nth-child(4) {
-        height: 990px;
-    }
-
-    .vacancy__card:nth-child(5) {
-        height: 650px;
-    }
-
-    .vacancy__card:nth-child(6) {
-        height: 830px;
-    }
-
-    .vacancy__card:nth-child(7) {
-        height: 820px;
-    }
-
-    .vacancy__card:nth-child(8) {
         height: 810px;
     }
 
+    .vacancy__card:nth-child(2) {
+        height: 860px;
+    }
+
+    .vacancy__card:nth-child(3) {
+        height: 860px;
+    }
+
+    .vacancy__card:nth-child(4) {
+        height: 1090px;
+    }
+
+    .vacancy__card:nth-child(5) {
+        height: 760px;
+    }
+
+    .vacancy__card:nth-child(6) {
+        height: 860px;
+    }
+
+    .vacancy__card:nth-child(7) {
+        height: 900px;
+    }
+
+    .vacancy__card:nth-child(8) {
+        height: 945px;
+    }
+
     .vacancy__card:nth-child(9) {
-        height: 790px;
+        height: 880px;
     }
 
     .vacancy__card:nth-child(10) {
-        height: 820px;
+        height: 930px;
     }
 
     .vacancy__card:nth-child(11) {
-        height: 910px;
+        height: 990px;
     }
 
     .vacancy__card:nth-child(12) {
-        height: 890px;
+        height: 990px;
     }
     
     .vacancy__card:nth-child(13) {
-        height: 740px;
+        height: 860px;
     }
 
     h4 {
         margin: 30px;
-        margin-top: -10px;
-        font-size: 36px;
+        margin-top: -40px;
+        font-size: 25px;
+        visibility: visible;
     }
     
     h5 {
         margin-top: -10px;
         margin-left: 20px;
         margin-right: 20px;
-        font-size: 28px;
+        font-size: 18px;
+        visibility: visible;
     }
     
+    .Order {
+        visibility: visible;
+    }
+
     .call_me_please{
-        font-size: 25px;
+        font-size: 18px;
+        visibility: visible;
     }
  
     .container1 {
-        margin-top: 40px;
+        margin-top: 30px;
     }
 
     input {
-        width: 550px;
-        font-size: 28px;
+        width: 350px;
+        font-size: 20px;
         margin-bottom: 8px;
+        min-height: 45px;
     }
     
     .input_block span {
@@ -531,16 +558,17 @@ label {
     }
     
     input[type="file"] {
-        width: 550px;
+        width: 350px;
     }
 
     label {
-        font-size: 28px;
+        font-size: 22px;
         margin-top: 10px;
     }
     
     .button {
-        font-size: 25px;
+        font-size: 20px;
+        height: 45px;
     }
     
 } 

@@ -140,7 +140,6 @@ input {
 .input_block:nth-child(6) {
     height: 200px;
     margin-bottom: 30px;
-
 }
 
 
@@ -366,16 +365,23 @@ input {
 
     .title {
         margin-top: 35px;
+        visibility: visible;
+    }
 
+    .Order {
+        visibility: visible;
     }
 
     h3 {
         font-size: 18px;
         margin-top: -10px;
+        visibility: visible;
     }
 
     .call_me_please {
         font-size: 16px;
+        margin-bottom: -10px;
+        visibility: visible;
     }
 
     .container1 {
