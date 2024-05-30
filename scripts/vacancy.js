@@ -412,8 +412,9 @@ let generateVacancy = () => {
                 <h3>Требования к образованию</h3>
                 ${edu}
                 <h3>Зарплата от ${salary} руб.</h3>
+                <div class="respond__button" onclick="scrollDown()">Откликнуться</div>
             </div>
-            <div class="respond__button" onclick="scrollDown()">Откликнуться</div>
+            
         </div>
         `;
         })

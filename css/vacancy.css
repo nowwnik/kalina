@@ -106,7 +106,7 @@ h5 {
     font-weight: 800;
 }
 
-.call_me_please{
+.call_me_please {
     text-align: center;
     font-size: 1.8em;
     font-weight: 600;
@@ -149,7 +149,7 @@ input {
     font-weight: 800;
 }
 
-.input_block .resume{
+.input_block .resume {
     font-size: 1rem;
 }
 
@@ -250,8 +250,7 @@ label {
 
 /*Адаптация*/
 
-@media screen and (max-width: 1920px) 
-{
+@media screen and (max-width: 1920px) {
     .vacancy {
         padding-left: 6%;
     }
@@ -295,19 +294,20 @@ label {
         font-size: 1.5em;
     }
 
-    .input_block span, label,.button {
+    .input_block span,
+    label,
+    .button {
         font-size: 1.3em;
     }
 }
 
-@media screen and (max-width: 820px) 
-{
+@media screen and (max-width: 820px) {
     h1 {
         margin-top: 37px;
         font-size: 42px;
         font-weight: 800;
         color: darkred;
-    
+
     }
 
     h2 {
@@ -319,7 +319,7 @@ label {
     h3 {
         font-size: 36px;
     }
-    
+
     .vacancy {
         margin-left: -5px;
         margin-right: -5px;
@@ -334,7 +334,7 @@ label {
         max-width: 100%;
     }
 
-    .vacancy__card:nth-child(1) {
+    /*.vacancy__card:nth-child(1) {
         height: 1090px;
     }
 
@@ -384,25 +384,25 @@ label {
     
     .vacancy__card:nth-child(13) {
         height: 1170px;
-    }
+    }*/
 
     h4 {
         margin: 30px;
         margin-top: -10px;
         font-size: 36px;
     }
-    
+
     h5 {
         margin-top: -10px;
         margin-left: 20px;
         margin-right: 20px;
         font-size: 28px;
     }
-    
-    .call_me_please{
+
+    .call_me_please {
         font-size: 25px;
     }
- 
+
     .container1 {
         margin-top: 40px;
     }
@@ -413,11 +413,11 @@ label {
         margin-bottom: 8px;
         min-height: 60px;
     }
-    
+
     .input_block span {
         font-size: 28px;
     }
-    
+
     input[type="file"] {
         width: 550px;
     }
@@ -426,16 +426,15 @@ label {
         font-size: 28px;
         margin-top: 10px;
     }
-    
+
     .button {
         font-size: 25px;
         height: 60px;
     }
-    
+
 }
 
-@media screen and (max-width: 576px) 
-{
+@media screen and (max-width: 576px) {
     h1 {
         margin-top: 25px;
         margin-bottom: -15px;
@@ -452,7 +451,7 @@ label {
         font-size: 22px;
         margin-top: 5px;
     }
-    
+
     .vacancy {
         margin-left: -20px;
         margin-right: -20px;
@@ -463,10 +462,11 @@ label {
     }
 
     .vacancy__card {
+
         max-width: 100%;
     }
 
-    .vacancy__card:nth-child(1) {
+    /*.vacancy__card:nth-child(1) {
         height: 810px;
     }
 
@@ -516,7 +516,7 @@ label {
     
     .vacancy__card:nth-child(13) {
         height: 860px;
-    }
+    }*/
 
     h4 {
         margin: 30px;
@@ -524,7 +524,7 @@ label {
         font-size: 25px;
         visibility: visible;
     }
-    
+
     h5 {
         margin-top: -10px;
         margin-left: 20px;
@@ -532,16 +532,16 @@ label {
         font-size: 18px;
         visibility: visible;
     }
-    
+
     .Order {
         visibility: visible;
     }
 
-    .call_me_please{
+    .call_me_please {
         font-size: 18px;
         visibility: visible;
     }
- 
+
     .container1 {
         margin-top: 30px;
     }
@@ -552,11 +552,11 @@ label {
         margin-bottom: 8px;
         min-height: 45px;
     }
-    
+
     .input_block span {
         font-size: 28px;
     }
-    
+
     input[type="file"] {
         width: 350px;
     }
@@ -565,10 +565,10 @@ label {
         font-size: 22px;
         margin-top: 10px;
     }
-    
+
     .button {
         font-size: 20px;
         height: 45px;
     }
-    
-} 
+
+}
