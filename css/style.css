@@ -190,5 +190,25 @@ body {
 
 @media screen and (max-width: 576px) {
 
-    
+    .header__inner{
+        margin: 0px;
+        padding: 5px;
+        justify-content: center;
+    }
+    .menu{
+        margin: 6%;
+        margin-bottom: 2%;
+    }
+    .menu__list{
+        flex-direction: column;
+    }
+    .menu__list-item{
+        font-size: 1.3em;
+        padding: 3px;
+    }
+    .contact__information{
+        flex-direction: row;
+        font-size: 1em;
+        margin-left: 7%;
+    }
 }
