@@ -161,98 +161,12 @@ body {
         font-size: 1.2em;
     }
 }
-
+/*
 /* Large devices (notebook, 992px and up)*/
 @media screen and (max-width: 992px) {}
 
 /* Medium devices (tablets, 768px and up)*/
-@media screen and (max-width: 768px) {
-    /*menu block*/
-    .logo__img {
-        margin-left: -100px;
-        margin-right: 0;
-
-    }
-
-    .header__inner {
-        margin-left: 15%;
-        margin-right: 10%;
-        padding-top: 0;
-        padding-bottom: 30px;
-        padding-left: 10px;
-    }
-
-    .menu {
-        margin: 0 20px;
-        margin-right: 12%;
-    }
-
-    .menu__list {
-        display: flex;
-        padding: 0 20px;
-        gap: 30px;
-    }
-
-    .menu__list-item {
-        font-size: 1.7em;
-        padding: 10px;
-    }
-/*юююююююююююююююююююююююююююююююююююююююююююююююююююююююююююююююю*/
-    .contact__information {
-        text-align: left;
-        margin: 0 10px;
-        margin-left: 5%;
-        color: white;
-        font-size: 1.5em;
-        cursor: default;
-
-    }
-
-    /*main block*/
-    .main {
-        flex-grow: 1;
-    }
-
-    /*footer block*/
-
-    .footer {
-        overflow: hidden;
-
-    }
-
-    .footer__inner {
-        margin-bottom: -110px;
-
-    }
-
-    .footer__img {
-        object-fit: cover;
-
-    }
-
-    .footer__logo {
-        margin: auto;
-        position: relative;
-        display: flex;
-        gap: 10px;
-        cursor: default;
-    }
-
-    .footer__text {
-        max-width: 340px;
-        margin: auto;
-        position: relative;
-        bottom: 130px;
-        padding: 5px;
-        color: white;
-        text-transform: uppercase;
-
-    }
-
-    .footer__inner__text {
-        cursor: default;
-    }
-}
+@media screen and (max-width: 820px) {}
 
 /*Small devices (phones, 576px and up)*/
 @media screen and (max-width: 576px) {}
