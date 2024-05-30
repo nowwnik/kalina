@@ -323,7 +323,7 @@ input {
 /*Small devices (phones, 576px and up)*/
 @media screen and (max-width: 576px) {
     h1 {
-        margin: 25px;
+        margin: 15px;
         font-size: 25px;
     }
 
@@ -363,25 +363,26 @@ input {
         margin: 25px;
     }
 
+    .wow {
+        visibility: hidden;
+    }
+
+    .order__animation{
+        visibility: visible;
+    }
+
     .title {
         margin-top: 35px;
-        visibility: visible;
     }
-
-    .Order {
-        visibility: visible;
-    }
-
+   
     h3 {
         font-size: 18px;
         margin-top: -10px;
-        visibility: visible;
     }
 
     .call_me_please {
         font-size: 16px;
         margin-bottom: -10px;
-        visibility: visible;
     }
 
     .container1 {
@@ -414,4 +415,6 @@ input {
         font-size: 18px;
         margin-top: 20px;
     }
+
+    
 }

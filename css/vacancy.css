@@ -304,10 +304,7 @@ label {
 @media screen and (max-width: 820px) {
     h1 {
         margin-top: 37px;
-        font-size: 42px;
-        font-weight: 800;
-        color: darkred;
-
+        margin-bottom: 20px;
     }
 
     h2 {
@@ -321,8 +318,7 @@ label {
     }
 
     .vacancy {
-        margin-left: -5px;
-        margin-right: -5px;
+        padding: 0%;
     }
 
     .vacancy__card__text {
@@ -332,6 +328,10 @@ label {
 
     .vacancy__card {
         max-width: 100%;
+    }
+
+    .vacancy__card:nth-child(n) {
+        animation-delay: 0.1s;
     }
 
     /*.vacancy__card:nth-child(1) {
@@ -466,63 +466,20 @@ label {
         max-width: 100%;
     }
 
-    /*.vacancy__card:nth-child(1) {
-        height: 810px;
+    .wow {
+        visibility: hidden;
     }
 
-    .vacancy__card:nth-child(2) {
-        height: 860px;
+    .order__animation{
+        visibility: visible;
     }
 
-    .vacancy__card:nth-child(3) {
-        height: 860px;
-    }
-
-    .vacancy__card:nth-child(4) {
-        height: 1090px;
-    }
-
-    .vacancy__card:nth-child(5) {
-        height: 760px;
-    }
-
-    .vacancy__card:nth-child(6) {
-        height: 860px;
-    }
-
-    .vacancy__card:nth-child(7) {
-        height: 900px;
-    }
-
-    .vacancy__card:nth-child(8) {
-        height: 945px;
-    }
-
-    .vacancy__card:nth-child(9) {
-        height: 880px;
-    }
-
-    .vacancy__card:nth-child(10) {
-        height: 930px;
-    }
-
-    .vacancy__card:nth-child(11) {
-        height: 990px;
-    }
-
-    .vacancy__card:nth-child(12) {
-        height: 990px;
-    }
-    
-    .vacancy__card:nth-child(13) {
-        height: 860px;
-    }*/
-
+  
     h4 {
         margin: 30px;
         margin-top: -40px;
         font-size: 25px;
-        visibility: visible;
+        
     }
 
     h5 {
@@ -530,16 +487,12 @@ label {
         margin-left: 20px;
         margin-right: 20px;
         font-size: 18px;
-        visibility: visible;
-    }
-
-    .Order {
-        visibility: visible;
+        
     }
 
     .call_me_please {
         font-size: 18px;
-        visibility: visible;
+
     }
 
     .container1 {
