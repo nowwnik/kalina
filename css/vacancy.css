@@ -28,7 +28,7 @@ h1 {
 }
 
 .vacancy__card {
-    height: 100vh;
+    height: 105vh;
     max-width: 31%;
     margin: 10px;
     box-shadow: 0px 8px 14px 4px rgba(101, 101, 101, 0.16);
@@ -102,7 +102,7 @@ h4 {
 h5 {
     margin-top: -20px;
     text-align: center;
-    font-size: 25px;
+    font-size: 1.8em;
     font-weight: 800;
 }
 
@@ -139,7 +139,7 @@ input {
     height: 100%;
     min-height: 50px;
     font-family: 'Ubuntu', sans-serif;
-    font-size: 2em;
+    font-size: 1.7em;
     margin-bottom: 10px;
 
 }
@@ -149,6 +149,9 @@ input {
     font-weight: 800;
 }
 
+.input_block .resume{
+    font-size: 1rem;
+}
 
 
 input[type="file"] {
@@ -184,7 +187,7 @@ label {
     justify-content: center;
     align-items: center;
     color: black;
-    font-size: 16px;
+    font-size: 1.5em;
     font-weight: bold;
     text-decoration: none;
     background-color: rgb(211, 0, 0);
@@ -193,6 +196,7 @@ label {
     animation: bttn;
     animation-duration: 5s;
     animation-iteration-count: infinite;
+    cursor: pointer;
 }
 
 .button:hover {
@@ -253,7 +257,11 @@ label {
     }
 
     .vacancy__card {
+<<<<<<< HEAD
         height: 1100px;
+=======
+        height: 115vh;
+>>>>>>> 168725d4032df0c23e4c9ceb7ba193123eda7b59
         max-width: 44%;
         margin: 0px 20px 20px;
     }
