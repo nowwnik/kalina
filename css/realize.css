@@ -397,11 +397,15 @@ input {
     h3 {
         font-size: 18px;
         margin-top: -10px;
+        margin-left: 5%;
+        margin-right: 5%;
     }
 
     .call_me_please {
         font-size: 18px;
         margin-bottom: -10px;
+        margin-left: 5%;
+        margin-right: 5%;
     }
 
     .container1 {

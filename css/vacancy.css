@@ -312,6 +312,8 @@ label {
 
     h5, .call_me_please {
         font-size: 1.5em;
+        margin-left: 5%;
+        margin-right: 5%;
     }
 
 }
