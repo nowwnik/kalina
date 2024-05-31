@@ -352,233 +352,298 @@ h3 {
     }
 
     h2 {
-        font-size: 36px;
-        margin: 5%;
-        padding-top: 20px;
+        font-size: 38px;
+        padding-top: 30px;
         transform: skew(0);
     }
 
     .main__inner {
         display: flex;
-        margin: 5%;
         flex-direction: column;
+        justify-content: center;
+        margin-bottom: 50px;
     }
 
     .background__block {
-
-        width: 220%;
+        width: 100%;
         height: 100%;
         transform: skew(0);
-        background: #e5e5e7;
-        max-width: 1600px;
-        flex-grow: 1;
-
     }
 
     .main__inner__block {
-        max-width: 50%;
+        max-width: 100%;
         flex-direction: column;
-        z-index: 1;
+        justify-content: center;
 
     }
 
     .main__inner__text {
-        padding: 140px 80px 80px 140px;
+        margin: auto;
+        margin-top: -10px;
         margin-bottom: 20px;
-
+        padding: 5%;
+        justify-content: center;
         align-items: center;
-        font-size: 2.3em;
+        font-size: 34px;
         transform: skew(0);
-        width: 95%;
-
-    }
-
-    p {
-        color: darkred;
-        font-weight: 600;
-        display: contents;
-
-    }
-
-    .inner__bg {
-        background: #e5e5e7;
-        transform: skew(-30deg);
-        padding: 30px;
-        margin: 30px;
-
-    }
-
-    .inner__bg .inner__text {
-        transform: skew(30deg);
-    }
-
-    .company {
-        font-size: 2.5em;
-    }
-
-    .inner__text {
-        display: flex;
-        align-items: center;
-        padding-left: 30px;
-        font-size: 2.5em;
-        margin: 1em;
-
-    }
-
-    .history__text {
-        font-size: 2em;
-
-    }
-
-    .history__text a {
-        text-decoration: underline;
-    }
-
-    .history__text a:hover {
-        color: rgb(23, 23, 199);
-    }
-
-
-    .background1 {
-        margin-top: 1%;
-        width: 100%;
-        height: 1200px;
-        background-position: center;
-        background-size: cover;
-        background-attachment: fixed;
-        background-image: url(../images/disription//bg/bg1.jpg);
-    }
-
-    .background2 {
-        margin: 0;
-        width: 100%;
-        height: 1200px;
-        background-position: center;
-        background-size: cover;
-        background-attachment: fixed;
-        background-image: url(../images/disription//bg/bg2.jpg);
+        width: 90%;
     }
 
     .discrp__pic {
-        margin-left: 12%;
-        flex-grow: 1;
+        width: 100%;
+        margin-left: 0%;
     }
 
+    .background1 {
+        height: 500px;
+    }
+
+    .background2 {
+        height: 500px;
+    }
+
+    .inner__bg {
+        transform: skew(0);
+    }
+
+    .inner__bg .inner__text {
+        transform: skew(0);
+        font-size: 34px;
+        margin: auto;
+        margin-top: -10px;
+        margin-bottom: -10px;
+        padding: 5%;
+    }
 
     .fields {
-        width: 70%;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
+        width: 80%;
+    }
+
+    .company {
+        margin: 20px;
+        font-size: 38px;
     }
 
     .harvesting {
-        width: 996px;
-        height: 560px;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-
-    }
-
-    h3 {
-        font-size: 30px;
-        text-align: center;
-        margin-top: 15px;
-        margin-bottom: 20px;
-    }
-
-    .discription h3 {
-        font-size: 2.5em;
+        width: 100%;
+        height: 500px;
     }
 
     .background3 {
-        margin-top: 30px;
-        width: 100%;
-        height: 1200px;
-        background-position: center;
-        background-size: cover;
-        background-attachment: fixed;
-        background-image: url(../images/disription//bg/bg3.jpg);
+        height: 500px;
     }
 
     .plans {
-        margin-top: -30px;
-        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .inner__text {
+        font-size: 34px;
+    }
+
+    .discription h3 {
+        font-size: 38px;
     }
 
     .discription__img {
         display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        margin-left: 8em;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0;
+        width: 100%;
     }
 
     .discription__plans {
-        display: flex;
-        display: inline-block;
-        width: 30%;
-        margin: 10px;
-        margin-bottom: 40px;
-        box-shadow: 0px 8px 14px 4px rgba(101, 101, 101, 0.36);
-
+        width: 100%;
     }
-
-    .discription__plans:nth-child(2) {
-        animation-delay: 0.1s;
-    }
-
-    .discription__plans:nth-child(3) {
-        animation-delay: 0.2s;
-    }
-
-    .discription__plans:nth-child(4) {
-        animation-delay: 0.3s;
-    }
-
-    .discription__plans:hover {
-        box-shadow: 0px 8px 14px 4px rgba(101, 101, 101, 0.66);
-    }
-
 
     .background4 {
-        margin: 0;
-        width: 100%;
-        height: 1200px;
-        background-position: center;
-        background-size: cover;
-        background-attachment: fixed;
-        background-image: url(../images/disription//bg/bg4.jpg);
+        height: 500px;
+    }
+
+    h3 {
+        font-size: 36px;
+        margin-top: -20px;
+        margin-bottom: 40px;
+    }
+
+    .history__text {
+        font-size: 34px;
+        word-break: normal;
+
     }
 
     .history__pic {
         display: flex;
-        margin-left: 20px;
-        margin-right: auto;
-    }
-
-    .block__adaptive {
-        width: 190%;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+        margin-top: -20px;
+        padding: 0;
+        width: 75%;
+        gap: 25px;
     }
 
     .history__pic img {
-        width: 32%;
-        margin: 10px;
-        align-items: center;
+        width: 100%;
+        margin: 0;
     }
 
-    .history__pic img:nth-child(2) {
-        animation-delay: 0.1s;
-    }
-
-    .history__pic img:nth-child(3) {
-        animation-delay: 0.2s;
-    }
-
-    .history__pic img:nth-child(4) {
-        animation-delay: 0.3s;
-    }
 }
 
 
-@media screen and (max-width: 576px) {}
+@media screen and (max-width: 576px) 
+{
+    .swiper-slide {
+        height: 300px;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        display: none;
+    }
+
+    h1 {
+        margin: 37px;
+        font-size: 42px;
+    }
+
+    h2 {
+        font-size: 38px;
+        padding-top: 30px;
+        transform: skew(0);
+    }
+
+    .main__inner {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+
+    .background__block {
+        width: 100%;
+        height: 100%;
+        transform: skew(0);
+    }
+
+    .main__inner__block {
+        max-width: 100%;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    .main__inner__text {
+        margin: auto;
+        margin-top: -10px;
+        margin-bottom: 20px;
+        padding: 5%;
+        justify-content: center;
+        align-items: center;
+        font-size: 34px;
+        transform: skew(0);
+        width: 90%;
+    }
+
+    .discrp__pic {
+        width: 100%;
+        margin-left: 0%;
+    }
+
+    .background1 {
+        height: 300px;
+    }
+
+    .background2 {
+        height: 300px;
+    }
+
+    .inner__bg {
+        transform: skew(0);
+    }
+
+    .inner__bg .inner__text {
+        transform: skew(0);
+        font-size: 34px;
+        margin: auto;
+        margin-top: -10px;
+        margin-bottom: -10px;
+        padding: 5%;
+    }
+
+    .fields {
+        width: 80%;
+    }
+
+    .company {
+        margin: 20px;
+        font-size: 38px;
+    }
+
+    .harvesting {
+        width: 100%;
+        height: 500px;
+    }
+
+    .background3 {
+        height: 300px;
+    }
+
+    .plans {
+        margin-top: 20px;
+    }
+
+    .inner__text {
+        font-size: 34px;
+    }
+
+    .discription h3 {
+        font-size: 38px;
+    }
+
+    .discription__img {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0;
+        width: 100%;
+    }
+
+    .discription__plans {
+        width: 100%;
+    }
+
+    .background4 {
+        height: 300px;
+    }
+
+    h3 {
+        font-size: 36px;
+        margin-top: -20px;
+        margin-bottom: 40px;
+    }
+
+    .history__text {
+        font-size: 34px;
+        word-break: normal;
+
+    }
+
+    .history__pic {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+        margin-top: -20px;
+        padding: 0;
+        width: 75%;
+        gap: 25px;
+    }
+
+    .history__pic img {
+        width: 100%;
+        margin: 0;
+    }
+
+}
