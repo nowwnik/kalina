@@ -159,6 +159,26 @@ body {
     }
 }
 
+@media screen and (max-width: 1366px) {
+
+    .header__inner {
+        margin-right: 20px;
+    }
+
+    .logo__img{
+        margin-left: 20px;
+    }
+
+    .menu{
+        margin-right: 25px;
+    }
+
+    .contact__information{
+        margin-left: 3%;
+    }
+
+}
+
 
 
 @media screen and (max-width: 820px) {
