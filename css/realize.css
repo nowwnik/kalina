@@ -215,7 +215,6 @@ input {
 /*Адаптация*/
 
 
-/* Extra large devices (large desktops, 1920px and up)*/
 @media screen and (max-width: 1920px) {
 
     .swiper-slide {
@@ -251,10 +250,7 @@ input {
     }
 }
 
-/* Large devices (notebook, 992px and up)*/
-@media screen and (max-width: 992px) {}
 
-/* Medium devices (tablets, 768px and up)*/
 @media screen and (max-width: 820px) {
     h1 {
         margin: 37px;
@@ -281,7 +277,7 @@ input {
 
     .title {
         margin-top: 50px;
-
+        font-size: 36px;
     }
 
     h3 {
@@ -289,7 +285,7 @@ input {
     }
 
     .call_me_please {
-        font-size: 24px;
+        font-size: 25px;
     }
 
     .container1 {
@@ -301,6 +297,7 @@ input {
         width: 550px;
         font-size: 24px;
         margin-bottom: 6px;
+        min-height: 60px;
     }
 
     .input_block span {
@@ -310,7 +307,7 @@ input {
 
     .button {
         height: 60px;
-        font-size: 24px;
+        font-size: 26px;
     }
 
     .order-summary {
@@ -320,10 +317,9 @@ input {
 
 }
 
-/*Small devices (phones, 576px and up)*/
 @media screen and (max-width: 576px) {
     h1 {
-        margin: 15px;
+        margin: 25px;
         font-size: 25px;
     }
 
@@ -381,7 +377,7 @@ input {
     }
 
     .call_me_please {
-        font-size: 16px;
+        font-size: 18px;
         margin-bottom: -10px;
     }
 

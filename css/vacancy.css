@@ -28,7 +28,6 @@ h1 {
 }
 
 .vacancy__card {
-    
     max-width: 31%;
     margin: 10px;
     box-shadow: 0px 8px 14px 4px rgba(101, 101, 101, 0.16);
@@ -260,8 +259,7 @@ label {
     
 
     .vacancy__card {
-        
-        max-width: 44%;
+        max-width: 45%;
         margin: 0px 20px 20px;
     }
     
@@ -309,14 +307,14 @@ label {
 @media screen and (max-width: 820px) {
     h1 {
         margin-bottom: 20px;
+        font-size: 42px;
     }
 
     h2 {
         margin-top: 10px;
         margin-bottom: 10px;
+        font-size: 36px;
     }
-
-   
 
     .vacancy {
         padding: 0%;
@@ -328,13 +326,13 @@ label {
     }
 
     .vacancy__card {
-        max-width: 100%;
+        max-width: 90%;
+        margin: 0 5% 2% 5%;
     }
 
     .vacancy__card:nth-child(n) {
         animation-delay: 0s;
     }
-
 
     h4 {
         margin: 30px;
@@ -346,7 +344,7 @@ label {
         margin-top: -10px;
         margin-left: 20px;
         margin-right: 20px;
-        font-size: 28px;
+        font-size: 26px;
     }
 
     .call_me_please {
@@ -359,8 +357,8 @@ label {
 
     input {
         width: 550px;
-        font-size: 28px;
-        margin-bottom: 8px;
+        font-size: 24px;
+        margin-bottom: 6px;
         min-height: 60px;
     }
 
@@ -378,8 +376,13 @@ label {
     }
 
     .button {
-        font-size: 25px;
+        font-size: 26px;
         height: 60px;
+    }
+
+    .order-summary {
+        font-size: 26px;
+        margin-top: 25px;
     }
 
 }
@@ -402,8 +405,7 @@ label {
     }
 
     .vacancy {
-        margin: 0px;
-
+        margin: 0 5% 2% 5%;
     }
 
     .vacancy__card__text {
@@ -432,9 +434,9 @@ label {
 
   
     h4 {
-        margin: 30px;
-        margin-top: -40px;
-        font-size: 25px;
+        margin: 20px;
+        margin-top: 10px;
+        font-size: 22px;
         
     }
 
@@ -457,9 +459,9 @@ label {
 
     input {
         width: 350px;
-        font-size: 20px;
-        margin-bottom: 8px;
-        min-height: 45px;
+        font-size: 18px;
+        margin-bottom: 6px;
+        min-height: 40px;
     }
 
     .input_block span {
@@ -476,8 +478,13 @@ label {
     }
 
     .button {
-        font-size: 20px;
-        height: 45px;
+        font-size: 18px;
+        height: 40px;
+    }
+
+    .order-summary {
+        font-size: 18px;
+        margin-top: 20px;
     }
 
 }
